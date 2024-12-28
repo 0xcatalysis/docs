@@ -1,0 +1,38 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #1A4FFC;
+  --ifm-color-primary-dark: #1538cc;
+  --ifm-color-primary-darker: #102a9b;
+  --ifm-color-primary-light: #486dff;
+  --ifm-color-primary-lighter: #7996ff;
+
+  --ifm-background-color: #EDEDFD;
+  --ifm-font-family-base: 'Satoshi', 'Plus Jakarta Sans', sans-serif;
+  --ifm-font-family-monospace: 'Satoshi', 'Plus Jakarta Sans', monospace;
+}
+
+/* Custom background for the entire site */
+html, body {
+  background-color: var(--ifm-background-color);
+}
+
+/* Navbar customization */
+.navbar {
+  background-color: var(--ifm-color-primary) !important;
+}
+
+/* Footer customization */
+.footer {
+  background-color: var(--ifm-color-primary-dark) !important;
+}
+
+/* Typography customization */
+p, h1, h2, h3, h4, h5, h6, li, a, span {
+  font-family: var(--ifm-font-family-base) !important;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
