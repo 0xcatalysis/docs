@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
+import HomepageFeatures from "../components/HomepageFeatures";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
@@ -29,13 +30,15 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  // const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title="Catalysis"
       description="Abstraction Layer for Shared Security Protocols"
     >
       <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
     </Layout>
   );
 }
