@@ -128,6 +128,7 @@ const config = {
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap",
   ],
+  trailingSlash: true,
 };
 
 export default config;
