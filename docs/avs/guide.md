@@ -6,7 +6,7 @@ Think of it as “**Cosmos-SDK for building AVSs**”. It offers built-in **cust
 
 It is written in **Go/Rust**, so it’s both performant and fast.
 
-NOTE: The [implementation](https://github.com/0xcatalysis/catalyst-sdk) of Catalyst-SDK has already begun and we’re on track to launch a **devnet** in a few weeks.
+NOTE: The implementation of Catalyst-SDK has already begun and we’re on track to launch a **devnet** in a few weeks.
 
 # SDK Modules
 
