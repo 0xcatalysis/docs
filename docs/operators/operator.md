@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Benefits
 
 ## **Benefits for Node Operators** **AKA - What’s in there for Node Operators?**

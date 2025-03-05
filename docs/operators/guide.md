@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Catalyst-CLI
 
 Catalyst-CLI is a command line tool for node operators to **easily manage AVS infrastructure** across different restaking protocols.

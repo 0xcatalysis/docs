@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Catalysis",
-  tagline: "Abstraction Layer for Shared Security Protocols",
+  tagline: "The First Security Abstraction Layer",
   favicon: "favicon.ico",
 
   // Set the production url of your site here

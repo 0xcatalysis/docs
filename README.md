@@ -1,6 +1,6 @@
 # Overview
 
-Catalysis is building the first abstraction layer to aggregate and unify economic security across shared security protocols. Our goal is to simplify the process of building and managing AVSs by providing a seamless, unified solution for AVS developers and node operators.
+Catalysis is building the first **Security Abstraction Layer** to aggregate and unify economic security across shared security protocols. Our goal is to simplify the process of building and managing AVSs by providing a seamless, unified solution for AVS developers and node operators.
 
 This repository hosts documentation and guides for AVSs & Node operators looking to build on Catalysis.
 
