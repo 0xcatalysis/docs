@@ -15,7 +15,11 @@ The following is the view from the perspective of a node operator running an AVS
 - The AVS is sourcing economic security across EigenLayer, Symbiotic, Satlayer and Jito.
 - Each node operator runs a single instance of a Catalysis node client software.
 
-<div style={{width: "400px"}}>
+<div style={{
+  width: "400px",
+  margin: "auto",
+  maxWidth: "100%"
+}}>
 
 ![Simplified Stack](./img/arch-no-101.png)
 
