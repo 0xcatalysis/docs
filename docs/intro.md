@@ -10,7 +10,7 @@ sidebar_position: 1
 
 Catalysis is building the first **Security Abstraction Layer** to aggregate and unify economic security across shared security protocols.
 
-By abstracting away the complexities of restaking protocols, Catalysis provides a seamless, unified solution for **developers and node operators** to build and manage decentralized networks like AVSs, BVSs, and DVNs.
+By abstracting away the complexities of shared security, Catalysis provides a seamless, unified solution for **developers and node operators** to build and manage decentralized networks like AVSs, BVSs and DVNs.
 
 ## Why build with Catalysis?
 

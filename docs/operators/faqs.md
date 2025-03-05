@@ -14,9 +14,9 @@ You need to run a couple of commands to register your node with the Catalysis Ne
 
 Register your node with the Catalysis Network using a few simple commands, and then continue operating it as usual. Catalysis seamlessly integrates AVS security, **so you only need to run the AVS node software once, regardless of how many restaking protocols the AVS spans**. No additional infrastructure overhead.
 
-3. **Say an AVS exists on Eigenlayer (Ethereum) + Satlayer (Babylon). As a NO, do we need to partner with with Eigenlayer and Satlayer to be able to participate?**
+3. **Say an AVS exists on Eigenlayer (Ethereum) + Satlayer (Babylon). As a NO, do we need to partner with Eigenlayer and Satlayer to be able to participate?**
 
-No, you don’t need to partner with any restaking protocol directly. Catalysis abstracts these integrations, allowing you to run AVSs across multiple restaking protocols without individual agreements.
+No, you don’t need to partner with any restaking protocol directly. However, you do need to partner with LRTs/Vault curators to get delegations on the SSPs. Catalysis abstracts these integrations, allowing you to run AVSs across multiple restaking protocols without individual agreements.
 
 4. **Does a node operator participate at two levels - both the shared security protocol (SSP) layer and the abstraction layer?**
 
