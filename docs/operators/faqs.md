@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# FAQs for Node Operators
+# FAQs
 
 1. **What are the prerequisites for a Node Operator to join the Catalysis Network?**
 

@@ -47,13 +47,13 @@ The scope of Network design is broad. The Catalysis Network supports a wide rang
 The only requirement is that evidence of off-chain execution must be posted on-chain to enable verification.
 
 Example Use Cases:
-- Rollups → Secure L2 scaling solutions.
-- Data Availability Networks → Ensure reliable, censorship-resistant data storage.
-- Decentralized AI → On-chain verification of AI models and inference.
-- Prediction Markets → Trust-minimized markets to predict outcomes.
-- ZK-Verifiable Networks → Off-chain computation verified with zero-knowledge proofs.
-- Decentralized Stablecoins → Algorithmic and collateral-backed stable assets secured via shared security.
-- And More → Any service that requires trustless on-chain verification.
+- **Rollups** → Secure L2 scaling solutions.
+- **Data Availability Networks** → Ensure reliable, censorship-resistant data storage.
+- **Decentralized AI** → On-chain verification of AI models and inference.
+- **Prediction Markets** → Trust-minimized markets to predict outcomes.
+- **ZK-Verifiable Networks** → Off-chain computation verified with zero-knowledge proofs.
+- **Decentralized Stablecoins** → Algorithmic and collateral-backed stable assets secured via shared security.
+- **And More** → Any service that requires trustless on-chain verification.
 
 ## Summary of Benefits
 
