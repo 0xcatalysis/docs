@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Catalyst-SDK
 
 Catalyst SDK is a set of modular components to build AVSs. It can be considered as a _Swiss Army Knife_ to build **Universal AVSs**. It enables **plug-and-play** functionality with **full customisability** and provides **standard tooling** to build AVSs the “right way”.
