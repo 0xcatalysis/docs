@@ -23,9 +23,9 @@ In addition to driving adoption, Catalysis helps SSPs offer **better features a
 
 ## Summary of Benefits
 
-- **Demand Aggregation**: Catalysis acts as a distribution channel, aggregating demand for economic security from AVSs.
+- **Demand Aggregation**: Catalysis acts as a distribution channel, aggregating demand for economic security from Networks.
 - **Level Playing Field**: Provides equal opportunities for all restaking protocols to compete based on features, cost, and performance.
-- **Streamlined Onboarding**: Simplifies the process for AVSs to deploy, driving ecosystem growth.
+- **Streamlined Onboarding**: Simplifies the process for Networks to deploy, driving ecosystem growth.
 - **Enhanced Features**: Encourages SSPs to offer better features and more reliable economic security.
-- **Attracting AVSs**: Increases participation by enabling high-quality AVSs to join the ecosystem.
+- **Attracting Networks**: Increases participation by enabling high-quality Networks to join the ecosystem.
 - **Ecosystem Growth**: Fosters a vibrant and competitive environment for shared security protocols.
