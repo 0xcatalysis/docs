@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title="Catalysis"
-      description="Abstraction Layer for Shared Security Protocols"
+      description="The First Security Abstraction Layer"
     >
       <HomepageHeader />
       <main>
