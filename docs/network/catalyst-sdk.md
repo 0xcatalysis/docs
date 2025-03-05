@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Catalyst-SDK
 
 Catalyst SDK is a set of modular components to build AVSs. It can be considered as a _Swiss Army Knife_ to build **Universal AVSs**. It enables **plug-and-play** functionality with **full customisability** and provides **standard tooling** to build AVSs the “right way”.
@@ -23,4 +27,4 @@ The following modules are part of the Catalyst-SDK. (not an exhaustive list)
 | **Crypto**      | This module provides secure private key management with widely adopted signature schemes. It supports [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm), [BLS](https://eth2book.info/capella/part2/building_blocks/signatures/), and [Schnorr](https://en.wikipedia.org/wiki/Schnorr_signature) signatures, as well as threshold signatures, Shamir Secret Sharing, and popular hash functions. |
 | **Cross-Chain** | This module provides cross-chain compatibility for AVS teams, enabling them to execute tasks on any chain of their choice based on their requirements (such as reducing gas fees, faster block times, etc.). It also allows AVSs to distribute rewards and execute slashings from any chain they prefer.                                                                                                                        |
 
-![Architecture](./arch.png)
+![Architecture](./img/arch.png)

@@ -14,7 +14,7 @@ Features:
 - Offers **unified node setup** for AVSs distributed across multiple restaking protocols.
 - Includes key management, setup & monitoring among other features.
 
-![Architecture](./arch.png)
+![Architecture](./img/arch.png)
 
 ### 1. Multi Deployment Support
 
