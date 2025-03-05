@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## What is a Network?
 
-A Network in the Catalysis Network refers to any decentralized protocol that provides custom verification mechanisms of off-chain operations. A Network is composed of on-chain contracts for verification and an off-chain network of Operators. The off-chain part consists of client software run by network operators and network-specific validation logic.
+A Network in the Catalysis ecosystem refers to any decentralized protocol that provides custom verification mechanisms of off-chain operations. A Network is composed of on-chain contracts for verification and an off-chain network of Operators. The off-chain part consists of client software run by network operators and network-specific validation logic.
 
 Operators execute the service on behalf of the Network and then post evidence of their execution on-chain to the Network contracts. Operators play a critical role in ensuring network integrity:
 - If the Operators perform tasks properly, the Network can distribute rewards.
