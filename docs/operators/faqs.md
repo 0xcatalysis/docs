@@ -16,7 +16,7 @@ Register your node with the Catalysis Network using a few simple commands, and t
 
 3. **Say an AVS exists on Eigenlayer (Ethereum) + Satlayer (Babylon). As a NO, do we need to partner with Eigenlayer and Satlayer to be able to participate?**
 
-No, you don’t need to partner with any restaking protocol directly. However, you do need to partner with LRTs/Vault curators to get delegations on the SSPs. Catalysis abstracts these integrations, allowing you to run AVSs across multiple restaking protocols without individual agreements.
+No, you don’t need to partner with any restaking protocol directly. However, you do need to partner with LRTs/Vault curators to get delegations on Eigenlayer and Satlayer. Catalysis abstracts these integrations, allowing you to run AVSs across multiple restaking protocols without individual agreements.
 
 4. **Does a node operator participate at two levels - both the shared security protocol (SSP) layer and the abstraction layer?**
 
@@ -28,4 +28,4 @@ Yes, node operators must have economic security delegation on the SSP to partici
 
 6. **How are rewards distributed to node operators?**
 
-Rewards are distributed directly by the SSPs. If you’re running a Catalysis-Powered AVS secured by EigenLayer ($50M) + Symbiotic ($50M), you’ll receive separate payouts from both EigenLayer and Symbiotic based on your stake and participation.
+Rewards are distributed directly by the SSPs. If you’re running a Catalysis-Powered AVS (say $100M) secured by EigenLayer ($50M) + Symbiotic ($50M), you’ll receive separate payouts from both EigenLayer and Symbiotic based on your stake and participation.
