@@ -29,3 +29,9 @@ Yes, node operators must have economic security delegation on the SSP to partici
 6. **How are Rewards distributed to Node Operators?**
 
 Rewards are distributed directly by the SSPs. If you’re running a Catalysis-Powered AVS (say $100M) secured by EigenLayer ($50M) + Symbiotic ($50M), you’ll receive separate payouts from both EigenLayer and Symbiotic based on your stake and participation.
+
+7. **Do we need to partner with LRTs to run networks on a Shared Security Protocol (SSP)?**
+
+No, you don’t need to partner with LRTs directly. Catalysis partners with top LRTs and vault curators across SSPs, allowing you to seamlessly run Networks without separate LRT agreements.
+
+However, if you already have LRT partnerships, it can streamline delegation and integration, making the process even smoother.
