@@ -8,6 +8,8 @@ The following is a list of references that you can visit for more details.
 - Restaking Dashboards
   - [Restake watch](https://restake.watch/)
   - [U--1](https://u--1.com/)
+  - [Inception LRT Dashboard](https://inceptionlrt.com/restaking-explorer)
+  - [Dune Dashboard](https://dune.com/blocklytics/ethereum-restaking)
 - Docs
   - [Eigenlayer](https://docs.eigenlayer.xyz/)
   - [Symbiotic](https://docs.symbiotic.fi/)
