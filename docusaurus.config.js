@@ -60,7 +60,7 @@ const config = {
         style: "primary",
         logo: {
           alt: "Catalysis Logo",
-          src: "img/logo-no-background.svg",
+          src: "img/catalysis.png",
         },
         items: [
           {
