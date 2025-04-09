@@ -126,9 +126,23 @@ const config = {
       },
     }),
   stylesheets: [
-    "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap",
+    {
+      href: 'https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap',
+      type: 'text/css',
+      crossorigin: 'anonymous',
+    }
   ],
   trailingSlash: true,
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/favicon.ico',
+        title: 'Catalysis Documentation',
+      },
+    }
+  ],
 };
 
 export default config;

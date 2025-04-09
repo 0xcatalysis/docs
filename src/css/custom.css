@@ -3,22 +3,23 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
 :root {
-  --ifm-color-primary: #1A4FFC;
-  --ifm-color-primary-dark: #1538cc;
-  --ifm-color-primary-darker: #102a9b;
-  --ifm-color-primary-light: #486dff;
-  --ifm-color-primary-lighter: #7996ff;
+  --ifm-color-primary: #2D82B5;
+  --ifm-color-primary-dark: #1E6A9B;
+  --ifm-color-primary-darker: #155A8A;
+  --ifm-color-primary-light: #3D9AD6;
+  --ifm-color-primary-lighter: #E6F5FF;
 
   --ifm-background-color: #EDEDFD;
-  --ifm-font-family-base: 'Satoshi', 'Plus Jakarta Sans', sans-serif;
-  --ifm-font-family-monospace: 'Satoshi', 'Plus Jakarta Sans', monospace;
+  --ifm-font-family-base: 'Satoshi', sans-serif;
+  --ifm-font-family-monospace: 'Satoshi', monospace;
+  --ifm-font-color: #333333;
 }
 
 /* Custom background for the entire site */
 html, body {
   background-color: var(--ifm-background-color);
+  font-family: var(--ifm-font-family-base);
 }
 
 /* Navbar customization */
@@ -33,6 +34,13 @@ html, body {
 
 /* Typography customization */
 p, h1, h2, h3, h4, h5, h6, li, a, span {
-  font-family: var(--ifm-font-family-base) !important;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--ifm-font-family-base);
+  color: var(--ifm-font-color);
+}
+
+/* First, properly import Satoshi font */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap');
+  font-display: swap;
 }
