@@ -11,8 +11,8 @@
   --ifm-color-primary-lighter: #E6F5FF;
 
   --ifm-background-color: #EDEDFD;
-  --ifm-font-family-base: 'Satoshi', sans-serif;
-  --ifm-font-family-monospace: 'Satoshi', monospace;
+  --ifm-font-family-base: Arial, Helvetica, Inter, sans-serif;
+  --ifm-font-family-monospace:  Arial, Helvetica, Inter, monospace;
   --ifm-font-color: #333333;
 }
 
