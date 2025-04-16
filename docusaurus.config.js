@@ -43,12 +43,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           editUrl: "https://github.com/0xcatalysis/docs/edit/main/",
         },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/0xcatalysis/docs/edit/main/",
-          routeBasePath: 'blog',
-          postsPerPage: 10,
-        },
+        blog: false, // Disable the blog plugin
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -70,7 +65,7 @@ const config = {
         },
         items: [
           {
-            to: "/blog",
+            href: "https://catalysis.medium.com/",
             label: "Blog",
             position: "right",
           },
@@ -139,16 +134,6 @@ const config = {
     }
   ],
   trailingSlash: true,
-  headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'icon',
-        href: '/favicon.ico',
-        title: 'Catalysis Documentation',
-      },
-    }
-  ],
 };
 
 export default config;
