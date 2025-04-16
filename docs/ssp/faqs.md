@@ -16,4 +16,6 @@ That said, Catalysis is VM-agnostic by design—its flexible architecture allows
 
 3. **What are the benefits for restaking protocols to integrate with Catalysis?**
 
-Restaking protocols integrating with Catalysis benefit from demand aggregation, as Catalysis serves as a distribution channel for Networks seeking economic security. They also enjoy simplified onboarding processes that allow high-quality Networks to integrate more easily, boosting participation. Additionally, the ecosystem growth resulting from streamlined processes attracts more Networks to integrated SSPs.
+Restaking protocols integrating with Catalysis benefit from demand aggregation, as Catalysis serves as a distribution channel for Networks seeking economic security.
+
+They also enjoy simplified onboarding processes that allow high-quality Networks to integrate more easily, boosting participation.
