@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Catalysis",
+  title: "Catalysis Network",
   tagline: "The First Security Abstraction Layer",
   favicon: "favicon.ico",
 
@@ -43,6 +43,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           editUrl: "https://github.com/0xcatalysis/docs/edit/main/",
         },
+        blog: false, // Disable the blog plugin
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -126,7 +127,11 @@ const config = {
       },
     }),
   stylesheets: [
-    "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap",
+    {
+      href: 'https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap',
+      type: 'text/css',
+      crossorigin: 'anonymous',
+    }
   ],
   trailingSlash: true,
 };
