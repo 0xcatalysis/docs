@@ -65,7 +65,7 @@ const config = {
         },
         items: [
           {
-            href: "https://catalysis.medium.com/",
+            href: "https://blog.catalysis.network",
             label: "Blog",
             position: "right",
           },

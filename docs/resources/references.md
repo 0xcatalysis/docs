@@ -2,9 +2,7 @@
 
 The following is a list of references that you can visit for more details.
 
-- Catalysis Blog
-  - [Introducing Shared Security Abstraction](https://catalysis.medium.com/shared-security-abstraction-5910fbd5b79c)
-  - [Enabling a Future with Thousands of AVSS](https://catalysis.medium.com/why-catalysis-enabling-a-future-with-thousands-of-avss-9197bedcf283)
+- [Catalysis Blog](https://blog.catalysis.network)
 - Restaking Dashboards
   - [Restake watch](https://restake.watch/)
   - [U--1](https://u--1.com/)
@@ -22,4 +20,4 @@ The following is a list of references that you can visit for more details.
 - Node Operator problems - [Youtube](https://youtu.be/pmozNGACsGc?si=4-1UNgvlBTswqaM8&t=805)
 - Ethereum restaking economics - [Chorus.one Blog](https://chorus.one/articles/the-state-of-ethereum-restaking-economics-challenges-and-future-directions)
 - ZK is insufficient: [Sreeram's SBC Talk](https://www.youtube.com/watch?v=YSuG2kXjLNA)
-- [Enabling the Builders: How Catalysis is Unlocking the Next Generation of AVSs](https://www.prestolabs.io/research/enabling-the-builders-how-catalysis-is-unlocking-the-next-generation-of-avss)
+- Presto Research: [Enabling the Builders: How Catalysis is Unlocking the Next Generation of AVSs](https://www.prestolabs.io/research/enabling-the-builders-how-catalysis-is-unlocking-the-next-generation-of-avss)
