@@ -125,6 +125,10 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      metadata: [
+        {name: 'og:image', content: 'https://docs.catalysis.network/img/catalysis.png?v=2'},
+        {name: 'twitter:image', content: 'https://docs.catalysis.network/img/catalysis.png?v=2'}
+      ],
     }),
   stylesheets: [
     {
