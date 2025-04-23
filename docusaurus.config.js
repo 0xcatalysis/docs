@@ -132,9 +132,8 @@ const config = {
     }),
   stylesheets: [
     {
-      href: 'https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap',
+      href: '/fonts/satoshi.css',
       type: 'text/css',
-      crossorigin: 'anonymous',
     }
   ],
   trailingSlash: true,
