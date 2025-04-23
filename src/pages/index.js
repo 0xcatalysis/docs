@@ -5,7 +5,6 @@ import HomepageFeatures from "../components/HomepageFeatures";
 import React from "react";
 
 import Heading from "@theme/Heading";
-import styles from "./index.module.css";
 
 function StripedBackground() {
   const lines = Array.from({ length: 30 }, (_, i) => (
@@ -15,7 +14,7 @@ function StripedBackground() {
     </div>
   ));
   
-  return <div className="striped-background">{lines}</div>;
+  return <div className="striped-background desktop-only">{lines}</div>;
 }
 
 function FeaturePills() {
@@ -30,7 +29,7 @@ function FeaturePills() {
   ];
   
   return (
-    <div className={styles.featurePillsContainer}>
+    <div className="feature-pills-container">
       {features.map((feature, idx) => (
         <div key={idx} className="feature-pill">
           <span></span> {feature}
@@ -42,19 +41,19 @@ function FeaturePills() {
 
 function HomepageHeader() {
   return (
-    <header className={clsx(styles.heroBanner)}>
+    <header className="hero-banner">
       <StripedBackground />
-      <div className={styles.heroContent}>
-        <div className={styles.heroLeft}>
+      <div className="hero-content">
+        <div className="hero-left">
         </div>
-        <div className={styles.heroRight}>
-          <Heading as="h1" className={styles.title}>
+        <div className="hero-right">
+          <Heading as="h1" className="hero-title">
             Catalysis Network Documentation
           </Heading>
-          <p className={styles.subtitle}>
+          <p className="hero-subtitle">
             The First Security Abstraction Layer
           </p>
-          <div className={styles.buttons}>
+          <div className="hero-buttons">
             <Link
               className="start-building-button"
               to="/docs/intro"

@@ -79,15 +79,7 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Docs",
-                to: "/docs/intro",
-              },
-            ],
-          },
+
           {
             title: "Community",
             items: [
@@ -126,8 +118,8 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       metadata: [
-        {name: 'og:image', content: 'https://docs.catalysis.network/img/catalysis.png?v=2'},
-        {name: 'twitter:image', content: 'https://docs.catalysis.network/img/catalysis.png?v=2'}
+        { name: 'og:image', content: 'https://docs.catalysis.network/img/catalysis.png?v=2' },
+        { name: 'twitter:image', content: 'https://docs.catalysis.network/img/catalysis.png?v=2' }
       ],
     }),
   stylesheets: [
