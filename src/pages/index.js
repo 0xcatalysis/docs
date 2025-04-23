@@ -25,7 +25,8 @@ function FeaturePills() {
     "AI Inference Engines",
     "ZK Co-Processors",
     "Intents Solvers",
-    "Keeper Networks"
+    "Keeper Networks",
+    "Anything"
   ];
   
   return (
@@ -48,7 +49,7 @@ function HomepageHeader() {
         </div>
         <div className={styles.heroRight}>
           <Heading as="h1" className={styles.title}>
-            Catalysis Network
+            Catalysis Network Documentation
           </Heading>
           <p className={styles.subtitle}>
             The First Security Abstraction Layer
@@ -76,9 +77,9 @@ export default function Home() {
       description="The First Security Abstraction Layer"
     >
       <HomepageHeader />
-      <main className="home-main">
+      {/* <main className="home-main">
         <HomepageFeatures />
-      </main>
+      </main> */}
     </Layout>
   );
 }

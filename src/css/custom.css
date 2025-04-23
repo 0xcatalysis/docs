@@ -10,12 +10,14 @@
   --ifm-color-primary: #4a7c32;
   --ifm-color-primary-dark: #427028;
   --ifm-color-primary-darker: #396323;
+  --ifm-color-primary-darkest: #2d501c; /* Very intense green for hamburger */
   --ifm-color-primary-light: #5a8c42;
   --ifm-color-primary-lighter: #6a9c52;
   --ifm-background-color: #f1fae6;
   --ifm-font-family-base: 'Satoshi', Arial, Helvetica, sans-serif;
   --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --ifm-font-color: #333333;
+  --ifm-menu-color: #111111; /* Darker gray, closer to black for menu links */
   
   /* Framer font variables */
   --framer-font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
@@ -42,21 +44,15 @@ body.homepage {
 /* Navbar customization */
 .navbar {
   background-color: var(--ifm-background-color) !important;
-  height: auto;
-  min-height: 4.5rem;
   display: flex;
   align-items: center;
 }
 
-/* Make navbar logo bigger and center it */
+/* Center the logo with original size */
 .navbar__logo {
-  height: 2.8rem; /* Adjust logo height for better centering */
-  margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 2px; /* Fine-tune vertical alignment */
 }
 
 .navbar__brand {
@@ -66,14 +62,13 @@ body.homepage {
 }
 
 .navbar__logo img {
-  height: 100%;
-  max-width: none;
   display: block;
+  width: 171px;
+  height: 48px;
 }
 
-/* Adjust navbar height to accommodate larger logo */
+/* Adjust navbar inner to center items */
 .navbar__inner {
-  padding: 0.75rem 0;
   display: flex;
   align-items: center;
 }
@@ -87,7 +82,6 @@ body.homepage {
 .navbar__item {
   display: flex;
   align-items: center;
-  padding: 0 0.75rem;
 }
 
 /* Make the navbar links vertically aligned with the logo */
@@ -95,8 +89,7 @@ body.homepage {
   display: flex;
   align-items: center;
   height: 100%;
-  position: relative;
-  top: 1px; /* Fine-tune alignment */
+  color: black;
 }
 
 /* Features section with different background */
@@ -125,11 +118,34 @@ body.homepage {
 /* Footer customization */
 .footer {
   background-color: var(--ifm-background-color) !important;
-  color: var(--ifm-color-primary-dark);
+  color: black;
   margin-top: 0;
   padding: 2rem 0;
   position: relative;
   z-index: 1;
+}
+
+/* Footer titles and links */
+.footer__title {
+  color: black !important;
+  font-weight: 600;
+}
+
+.footer__link-item,
+.footer__copyright,
+.footer a,
+.footer__bottom a,
+.footer__links a,
+.footer__col a {
+  color: black !important;
+}
+
+.footer__link-item:hover,
+.footer a:hover,
+.footer__links a:hover,
+.footer__col a:hover {
+  color: var(--ifm-color-primary-darker) !important;
+  text-decoration: underline;
 }
 
 /* Ensure footer has green background on all pages, overriding any previous styles */
@@ -170,11 +186,6 @@ a:hover {
 
 .navbar a:hover {
   color: var(--ifm-color-primary-darker);
-}
-
-/* If footer links are also invisible */
-.footer a {
-  color: var(--ifm-color-primary-dark);
 }
 
 /* Start Building button styling */
@@ -239,13 +250,13 @@ a:hover {
 }
 
 .striped-line-left {
-  width: 40%;
+  width: 90%;
   height: 100%;
   background-color: #4a7c32;
 }
 
 .striped-line-right {
-  width: 60%;
+  width: 0%;
   height: 100%;
   background-color: #5a8c42;
 }
@@ -258,14 +269,31 @@ a:hover {
   }
 }
 
-/* Intro section and documentation styling */
+/* Main content container for docs */
+main:not(.home-main) {
+  background-color: white;
+  padding-top: 1rem;
+}
+
+/* Main wrapper styling */
 .main-wrapper {
   background-color: white;
+}
+
+/* Ensure doc content starts with proper spacing from navbar */
+.docMainContainer {
+  background-color: white;
+  padding-top: 1rem;
+}
+
+.container.padding-top--md {
+  padding-top: 1rem;
 }
 
 /* Sidebar container */
 .navbar-sidebar {
   background-color: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Table of contents */
@@ -282,6 +310,17 @@ a:hover {
   background-color: white;
 }
 
+/* Ensure sidebar navigation has proper spacing */
+.menu__link {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  color: var(--ifm-menu-color);
+}
+
+.menu__link:hover {
+  color: var(--ifm-color-primary);
+}
+
 /* Make all documentation pages have white background */
 .docs-wrapper,
 .docs-page,
@@ -291,11 +330,6 @@ article,
 .theme-doc-markdown,
 .docs-doc-item {
   background-color: white !important;
-}
-
-/* Main content container for docs */
-main:not(.home-main) {
-  background-color: white;
 }
 
 /* Make sure doc containers don't override footer styles */
@@ -323,6 +357,7 @@ main:not(.home-main) + .footer {
 /* Make sure the intro section has a white background */
 .docMainContainer {
   background-color: white;
+  padding-top: 2rem;
 }
 
 /* Add this class to the Home component's main element */
@@ -337,4 +372,146 @@ html body .footer,
 body[class*="docs-"] .footer,
 #__docusaurus .footer {
   background-color: var(--ifm-background-color) !important;
+}
+
+/* Add padding to account for larger navbar */
+.navbar-sidebar-item {
+  padding-top: 0.5rem;
+}
+
+
+/* Adjust anchor offset for headings in documentation */
+:target::before {
+  content: "";
+  display: block;
+  height: 4rem; /* Adjusted for original navbar height */
+  margin-top: -4rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Additional spacing for headings */
+.markdown h1:first-child {
+  margin-top: 1rem;
+}
+
+/* Add a single comprehensive menu__link--active style */
+.menu__link--active {
+  color: black !important;
+  font-weight: 600;
+  background-color: rgba(74, 124, 50, 0.1); /* Light green background */
+}
+
+/* Also update menu link color for category headings */
+.menu__list-item-collapsible {
+  color: var(--ifm-menu-color);
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: rgba(74, 124, 50, 0.05);
+}
+
+.menu__link--sublist {
+  color: gray;
+}
+
+.menu__link--active:hover {
+  background-color: rgba(74, 124, 50, 0.15);
+}
+
+.navbar__link--active {
+  color: black !important;
+  font-weight: 600;
+}
+
+/* Make sure the theme-switch button has the right background */
+.navbar button {
+  background-color: transparent;
+}
+
+/* Style hamburger menu icon with a more intense green */
+.navbar__toggle {
+  color: var(--ifm-color-primary-darker) !important;
+}
+
+.navbar__toggle:hover {
+  color: var(--ifm-color-primary-darkest) !important;
+}
+
+/* Style the hamburger icon bars */
+.navbar__toggle .navbar__toggle-icon {
+  display: block;
+}
+
+.navbar__toggle .navbar__toggle-icon::before,
+.navbar__toggle .navbar__toggle-icon::after,
+.navbar__toggle .navbar__toggle-icon {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+.navbar__toggle:hover .navbar__toggle-icon::before,
+.navbar__toggle:hover .navbar__toggle-icon::after,
+.navbar__toggle:hover .navbar__toggle-icon {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+/* Style mobile menu links to be darker */
+.navbar-sidebar .menu__link {
+  color: #222222 !important; /* Very dark gray, almost black */
+  font-weight: 500;
+}
+
+/* Style mobile menu active links to be black */
+.navbar-sidebar .menu__link--active {
+  color: black !important;
+  font-weight: 600;
+  background-color: rgba(74, 124, 50, 0.1); /* Light green background */
+}
+
+/* Style mobile collapsible links */
+.navbar-sidebar .menu__list-item-collapsible {
+  color: #222222 !important;
+}
+
+/* Style mobile navbar links */
+.navbar-sidebar .navbar__item {
+  color: #222222 !important;
+}
+
+.navbar-sidebar .navbar__link {
+  color: #222222 !important;
+  font-weight: 500;
+}
+
+.navbar-sidebar .navbar__link--active {
+  color: black !important;
+  font-weight: 600;
+}
+
+/* Mobile menu background and theming */
+/* This is intentionally left blank to remove the duplicate */
+
+/* Mobile menu header */
+.navbar-sidebar__brand {
+  background-color: var(--ifm-background-color);
+  border-bottom: 1px solid rgba(74, 124, 50, 0.1);
+}
+
+/* Mobile menu close button */
+.navbar-sidebar__close {
+  color: var(--ifm-color-primary-darker) !important;
+}
+
+.navbar-sidebar__close:hover {
+  color: var(--ifm-color-primary-darkest) !important;
+}
+
+/* Style the sublist arrows in mobile menu */
+.navbar-sidebar .menu__link--sublist:after {
+  color: var(--ifm-color-primary-dark);
+}
+
+/* Add divider between sections */
+.navbar-sidebar__items--show-secondary {
+  border-top: 1px solid rgba(74, 124, 50, 0.1);
 }

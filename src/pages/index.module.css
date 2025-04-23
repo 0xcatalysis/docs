@@ -7,7 +7,7 @@
   min-height: 90vh;
   position: relative;
   overflow: hidden;
-  background-color: var(--ifm-background-color);
+  background-color: white;
   margin-bottom: 0;
 }
 
@@ -17,10 +17,17 @@
   min-height: 90vh;
   position: relative;
   z-index: 1;
+  margin-left: 10%;
 }
 
 .heroLeft {
   width: 25%;
+}
+
+@media screen and (max-width: 996px) {
+  .heroLeft {
+    display: none;
+  }
 }
 
 .heroRight {
