@@ -3,9 +3,13 @@ sidebar_position: 2
 title: Customisation
 ---
 
+:::caution
+This documentation is under active development. Some features may change as we continue to improve the framework.
+:::
+
 # Customisation Guide
 
-This guide outlines the various customization options available for different engines in the Catalysis framework.
+This guide outlines the various customization options available for different modules in the Catalysis framework.
 
 ## Execution Engine Customisations
 
