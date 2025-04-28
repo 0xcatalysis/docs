@@ -238,12 +238,4 @@ if err := avs.ConfigureServerEngine(); err != nil {
     log.Error("Failed to configure server engine", "error", err)
     return nil, err
 }
-``` 
-
-
-
-For detailed documentation refer to:
-- [Execution Engine](https://github.com/0xcatalysis/catalyst-sdk/blob/main/go-sdk/execution/README.md)
-- [Consensus Engine](https://github.com/0xcatalysis/catalyst-sdk/blob/main/go-sdk/consensus/README.md)
-- [P2P Engine](https://github.com/0xcatalysis/catalyst-sdk/blob/main/go-sdk/p2p/README.md)
-- [Server Engine](https://github.com/0xcatalysis/catalyst-sdk/blob/main/go-sdk/server/README.md)
+```
