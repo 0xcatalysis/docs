@@ -8,6 +8,10 @@ This documentation is under active development. Some features may change as we c
 
 # Quickstart
 
+:::caution
+We are working to open-source Lumos-cli. Meanwhile, if you want access, please submit [this form](https://forms.gle/cNgW92WARAw5Awjx6).
+:::
+
 ## Step 1: Register a New Network/AVS
 
 Register your network and get the relevant contract addresses in the Catalysis network:
