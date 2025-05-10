@@ -17,4 +17,4 @@ The following is a list of references that you can visit for more details.
 - Ethereum restaking economics - [Chorus.one Blog](https://chorus.one/articles/the-state-of-ethereum-restaking-economics-challenges-and-future-directions)
 - ZK is insufficient: [Sreeram's SBC Talk](https://www.youtube.com/watch?v=YSuG2kXjLNA)
 - Presto Research: [Enabling the Builders: How Catalysis is Unlocking the Next Generation of AVSs](https://www.prestolabs.io/research/enabling-the-builders-how-catalysis-is-unlocking-the-next-generation-of-avss)
-- [Economic Security of Multiple Shared Security Protocols](https://arxiv.org/abs/2505.03843)
+- [Mathematical Research Paper: Economic Security of Multiple Shared Security Protocols](https://arxiv.org/abs/2505.03843)
