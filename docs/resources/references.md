@@ -8,11 +8,7 @@ The following is a list of references that you can visit for more details.
   - [U--1](https://u--1.com/)
   - [Inception LRT Dashboard](https://inceptionlrt.com/restaking-explorer)
   - [Dune Dashboard](https://dune.com/blocklytics/ethereum-restaking)
-- Docs
-  - [Eigenlayer](https://docs.eigenlayer.xyz/)
-  - [Symbiotic](https://docs.symbiotic.fi/)
-  - [Babylonchain](https://docs.babylonchain.io/docs/introduction/overview)
-  - [Satlayer](https://docs.satlayer.xyz/)
+- Docs :  [Eigenlayer](https://docs.eigenlayer.xyz/), [Symbiotic](https://docs.symbiotic.fi/), [Babylonchain](https://docs.babylonchain.io/docs/introduction/overview), [Satlayer](https://docs.satlayer.xyz/)
 - Podcasts
   - [Interop Podcast](https://x.com/seb3point0/status/1874866432615616828)
 - Restaking flows and implications on services - [Gauntlet research](https://www.gauntlet.xyz/resources/restaking-flows-and-implications-on-services), [Youtube](https://youtu.be/vuZ1vfDgIbo?si=ZJIqbnvnmQujKva5)
