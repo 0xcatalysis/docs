@@ -11,6 +11,8 @@ The following is a list of references that you can visit for more details.
 - Docs :  [Eigenlayer](https://docs.eigenlayer.xyz/), [Symbiotic](https://docs.symbiotic.fi/), [Babylon](https://docs.babylonchain.io/docs/introduction/overview), [Satlayer](https://docs.satlayer.xyz/), [Jito](https://www.jito.network/restaking/)
 - Podcasts
   - [Interop Podcast](https://x.com/seb3point0/status/1874866432615616828)
+- Talks
+  - [Restaking Day, Dubai 2025](https://www.youtube.com/watch?v=DW33bexlxWo)
 - Restaking flows and implications on services - [Gauntlet research](https://www.gauntlet.xyz/resources/restaking-flows-and-implications-on-services), [Youtube](https://youtu.be/vuZ1vfDgIbo?si=ZJIqbnvnmQujKva5)
 - How much security does your AVS _really_ need? - [Paper](https://arxiv.org/abs/2408.00928), [Youtube](https://youtu.be/Cd89kupFgig?si=hUJwf84447OAl4Cg)
 - Node Operator problems - [Youtube](https://youtu.be/pmozNGACsGc?si=4-1UNgvlBTswqaM8&t=805)
