@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Catalysis Network",
-  tagline: "The First Security Abstraction Layer",
+  tagline: "Unified Access to ETH, BTC & SOL-backed Economic Security",
   favicon: "favicon.ico",
 
   // Set the production url of your site here

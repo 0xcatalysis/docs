@@ -51,7 +51,7 @@ function HomepageHeader() {
             Catalysis Network Documentation
           </Heading>
           <p className="hero-subtitle">
-            The First Security Abstraction Layer
+          Enabling Unified Access to ETH, BTC & SOL-backed Economic Security
           </p>
           <div className="hero-buttons">
             <Link
