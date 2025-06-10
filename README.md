@@ -1,6 +1,6 @@
 # Overview
 
-Catalysis is the first **Security Abstraction Layer** that enables unified access to $20B+ ETH, BTC & SOL-backed economic security across restaking protocols. Our goal is to simplify the process of building and managing AVSs by providing a seamless, unified solution for AVS developers and node operators.
+Catalysis is the first **Security Abstraction Layer** that unlocks unified access to $20B+ ETH, BTC & SOL-backed economic security across restaking protocols. Our goal is to simplify the process of building and managing AVSs by providing a seamless, unified solution for AVS developers and node operators.
 
 This repository hosts documentation and guides for AVSs & Node operators looking to build on Catalysis.
 
