@@ -8,9 +8,9 @@ sidebar_position: 1
 
 ## What is Catalysis?
 
-Catalysis is building the first **Security Abstraction Layer** to aggregate and unify economic security across shared security protocols.
+Catalysis is the first **Security Abstraction Layer** that unlocks **unified access** to **$20B+** ETH, BTC & SOL-backed economic security across restaking protocols.
 
-By abstracting away the complexities of shared security, Catalysis provides a seamless, unified solution for **developers and node operators** to build and manage decentralized networks like AVSs, BVSs and DVNs.
+By abstracting away integration complexity, Catalysis gives developers a **single interface** to seamlessly build next-generation applications powered by restaking, without worrying about the underlying infrastructure.
 
 ## Why build with Catalysis?
 

@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <Layout
       title="Catalysis"
-      description="The First Security Abstraction Layer"
+      description="Unified Access to ETH, BTC & SOL-backed Economic Security"
     >
       <HomepageHeader />
       {/* <main className="home-main">
