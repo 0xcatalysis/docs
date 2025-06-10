@@ -8,9 +8,9 @@ sidebar_position: 1
 
 ## What is Catalysis?
 
-Catalysis is building the first **Security Abstraction Layer** to aggregate and unify economic security across shared security protocols.
+Catalysis is the first **Security Abstraction Layer** that unlocks **Unified Access** to **$20B+** ETH, BTC & SOL-backed economic security across restaking protocols.
 
-By abstracting away the complexities of shared security, Catalysis provides a seamless, unified solution for **developers and node operators** to build and manage decentralized networks like AVSs, BVSs and DVNs.
+By abstracting away integration complexity, Catalysis gives developers a **single interface** to seamlessly build next-generation applications powered by restaking, without worrying about the underlying infrastructure.
 
 ## Why build with Catalysis?
 
@@ -25,10 +25,10 @@ The key benefits of building an AVS using Catalysis include:
 1. **Multi-Ecosystem Security:** Seamlessly integrate restaking protocols across major PoS chains like **Babylon (Bitcoin), Ethereum and Solana**.
 2. **Accelerated GTM:** Launch faster with developer-friendly SDKs, clear documentation and up to **80% savings on AVS development costs**.
 3. **Unmatched Economic Security:** Tap into **$20B+ in combined TVL** across restaking protocols - ensuring your AVS has the strongest possible security guarantees.
+4. **Resilient Infrastructure:** Spread risk across multiple restaking protocols, ensuring your AVS is **robust and reliable** even in adverse conditions across the restaking ecosystem.
 4. **Composability at Scale:** Unlock **composable, interoperable crypto-economic security** across restaking protocols.
 5. **No Vendor Lock-In:** Stay flexible with **modular integrations**, enabling your AVS to expand beyond one ecosystem.
 6. **Dynamic Security Rebalancing:** Real-time control to allocate and **rebalance security** across restaking protocols with a **single unified interface**.
-7. **Resilient Infrastructure:** Spread risk across multiple restaking protocols, ensuring your AVS is **robust and reliable** even in adverse conditions across the restaking ecosystem.
 
 It isn't just about simplifying AVS development - **it’s about unlocking the full potential of shared security**.
 

@@ -51,7 +51,7 @@ function HomepageHeader() {
             Catalysis Network Documentation
           </Heading>
           <p className="hero-subtitle">
-            The First Security Abstraction Layer
+          Unlocking Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security for Developers.
           </p>
           <div className="hero-buttons">
             <Link
@@ -73,7 +73,7 @@ export default function Home() {
   return (
     <Layout
       title="Catalysis"
-      description="The First Security Abstraction Layer"
+      description="Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security for Developers"
     >
       <HomepageHeader />
       {/* <main className="home-main">
