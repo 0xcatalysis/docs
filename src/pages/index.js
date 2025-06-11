@@ -19,15 +19,22 @@ function StripedBackground() {
 
 function FeaturePills() {
   const features = [
+    "On-chain insurance",
     "Oracles",
-    "Prediction Markets", 
+    "Slashing Protection",
+    "Prediction Markets",
+    "Under-collateralized Lending",
     "AI Inference Engines",
-    "ZK Co-Processors",
+    "Modular Stablecoins",
+    "RWA Financing",
     "Intents Solvers",
-    "Keeper Networks",
-    "Anything"
+    "Decentralized Prime Brokerages",
+    "Risk Tranching",
+    "Token Launch Custody",
+    "Guaranteed Flash Loans",
+    "ZK Co-Processors",
   ];
-  
+
   return (
     <div className="feature-pills-container">
       {features.map((feature, idx) => (
