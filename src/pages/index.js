@@ -70,13 +70,13 @@ function HomepageHeader() {
             <div className="hero-buttons-row">
               <Link
                 className="start-building-button"
-                to="/docs/architecture/overview"
+                to="/docs/catalysis-core/overview"
               >
                 Catalysis Core
               </Link>
               <Link
                 className="start-building-button"
-                to="/docs/coverage/intro"
+                to="/docs/catalysis-coverage/overview"
               >
                 Catalysis Coverage
               </Link>
