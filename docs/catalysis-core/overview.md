@@ -23,7 +23,11 @@ The **Catalysis Core** is built on three core components:
 2. **Node Operators** – Entities that run network software, perform validation tasks and secure them using the Catalysis stack through restaking protocols.
 3. **Restaking Protocols** – Also known as shared security protocols, these allow stakers to restake assets (LSTs, ERC-20s, etc.) to provide security for network validation. They function as a marketplace, connecting networks, node operators and stakers.
 
-![Simplified Stack](../arch-101.png)
+<div style={{textAlign: 'center'}}>
+
+![Simplified Stack](./images/arch-1.svg)
+
+</div>
 
 ## Why build with Catalysis Core?
 
@@ -49,4 +53,4 @@ It isn't just about simplifying SSN development - **it’s about unlocking the f
 
 ## The Restaking Stack
 
-![Expanded Stack](../images/expanded.png)
+![Expanded Stack](./images/full-arch.svg)
