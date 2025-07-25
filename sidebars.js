@@ -18,11 +18,6 @@ const sidebars = {
     'intro',
     {
       type: 'category',
-      label: 'Catalysis Network',
-      items: ['catalysis-network/overview'],
-    },
-    {
-      type: 'category',
       label: 'Catalysis Core',
       items: [
         'catalysis-core/overview',

@@ -49,4 +49,4 @@ It isn't just about simplifying SSN development - **it’s about unlocking the f
 
 ## The Restaking Stack
 
-![Expanded Stack](../catalysis-network/images/expanded.png)
+![Expanded Stack](../images/expanded.png)
