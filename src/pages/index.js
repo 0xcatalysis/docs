@@ -58,15 +58,29 @@ function HomepageHeader() {
             Catalysis Network Documentation
           </Heading>
           <p className="hero-subtitle">
-          Unlocking Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security for Developers.
+          Unlocking Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security.
           </p>
-          <div className="hero-buttons">
-            <Link
+                    <div className="hero-buttons">
+           <Link
               className="start-building-button"
               to="/docs/intro"
             >
-              Introduction to Catalysis
+              Introduction to Catalysis Network
             </Link>
+            <div className="hero-buttons-row">
+              <Link
+                className="start-building-button"
+                to="/docs/architecture/overview"
+              >
+                Catalysis Core
+              </Link>
+              <Link
+                className="start-building-button"
+                to="/docs/coverage/intro"
+              >
+                Catalysis Coverage
+              </Link>
+            </div>
           </div>
           <FeaturePills />
         </div>
@@ -76,11 +90,10 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-
   return (
     <Layout
       title="Catalysis"
-      description="Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security for Developers"
+      description="Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security."
     >
       <HomepageHeader />
       {/* <main className="home-main">
