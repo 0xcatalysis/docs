@@ -2,20 +2,16 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Catalysis Network
 
-## Shared Security Abstraction
+<div style={{textAlign: 'center'}}>
 
-**Shared Security Abstraction (SSA)** is a new primitive that abstracts the complexities of underlying shared security protocols from AVS developers. It aggregates both the supply-side (shared security protocols) and the demand-side (AVSs) of restaking ecosystem.
+![Catalysis Logo](/img/catalysis.png)
 
-This saves teams 80% on costs of building and managing AVSs.
+</div>
 
-![Architecture](./images/arch.png)
+## What is Catalysis Network?
 
-## The Restaking Stack (Simplified)
+Catalysis is the first **Security Abstraction Layer** that unlocks **Unified Access** to **$20B+** ETH, BTC & SOL-backed economic security across restaking protocols.
 
-![Simplified Stack](./images/mini.png)
-
-## The Restaking Stack (Expanded)
-
-![Expanded Stack](./images/expanded.png)
+By abstracting away integration complexity, Catalysis gives developers a **single interface** to seamlessly build next-generation applications powered by restaking, without worrying about the underlying infrastructure. 
