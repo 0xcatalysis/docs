@@ -4,7 +4,8 @@ The following is a list of references that you can visit for more details.
 
 - [Catalysis Blog](https://blog.catalysis.network)
 - Tokensight Research
-  - [A Primer on Catalysis](https://paragraph.com/@tokensightxyz/a-primer-on-catalysis)
+  - [A Primer on Catalysis: A research deep-dive](https://paragraph.com/@tokensightxyz/a-primer-on-catalysis)
+  - [Multi vs Single-Protocol Shared Security Networks](https://paragraph.com/@tokensightxyz/catalysis-ssn-deep-dive)
 - Presto Research: [Enabling the Builders: How Catalysis is Unlocking the Next Generation of AVSs](https://www.prestolabs.io/research/enabling-the-builders-how-catalysis-is-unlocking-the-next-generation-of-avss)
 - Mathematical Research (Accepted in [MARBLE 2025](https://www.marble-conference.org/marble2025)): [Economic Security of Multiple Shared Security Protocols](https://arxiv.org/abs/2505.03843)
 - Podcasts

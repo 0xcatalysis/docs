@@ -29,17 +29,17 @@ const sidebars = {
         {
           type: 'category',
           label: 'Network',
-          items: ['network/intro', 'network/catalyst-sdk', 'network/contracts', 'network/integration', 'network/faqs'],
+          items: ['catalysis-core/network/intro', 'catalysis-core/network/catalyst-sdk', 'catalysis-core/network/contracts', 'catalysis-core/network/integration', 'catalysis-core/network/faqs'],
         },
         {
           type: 'category',
           label: 'Node Operators',
-          items: ['operators/intro', 'operators/running-a-node', 'operators/faqs'],
+          items: ['catalysis-core/operators/intro', 'catalysis-core/operators/running-a-node', 'catalysis-core/operators/faqs'],
         },
         {
           type: 'category',
           label: 'Restaking Protocols',
-          items: ['restaking-protocols/overview'],
+          items: ['catalysis-core/restaking-protocols/intro', 'catalysis-core/restaking-protocols/overview', 'catalysis-core/restaking-protocols/faqs'],
         },
       ],
     },
@@ -47,6 +47,11 @@ const sidebars = {
       type: 'category',
       label: 'Catalysis Coverage',
       items: ['catalysis-coverage/overview'],
+    },
+    {
+      type: 'category',
+      label: 'Resources',
+      items: ['resources/references'],
     },
   ],
 };
