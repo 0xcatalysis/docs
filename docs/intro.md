@@ -2,41 +2,29 @@
 sidebar_position: 1
 ---
 
-# Intro to Catalysis
+# Introduction
+
+<div style={{textAlign: 'center'}}>
 
 ![Catalysis Logo](/img/catalysis.png)
 
-## What is Catalysis?
+</div>
 
-Catalysis is the first **Security Abstraction Layer** that unlocks **Unified Access** to **$20B+** ETH, BTC & SOL-backed economic security across restaking protocols.
+## What is Catalysis Network?
 
-By abstracting away integration complexity, Catalysis gives developers a **single interface** to seamlessly build next-generation applications powered by restaking, without worrying about the underlying infrastructure.
+**Catalysis Network** is the first **Security Abstraction Layer** that unlocks **Unified Access to $20B+ ETH, BTC & SOL-backed Economic Security** across leading restaking protocols on Ethereum, Bitcoin & Solana.
 
-## Why build with Catalysis?
+Catalysis Network is more than a single protocol. It is a modular ecosystem where **Catalysis Core** supplies a standardized, cross-protocol security interface and specialized applications build on top.
 
-Shared security protocols like EigenLayer, Symbiotic and Satlayer have unlocked a new paradigm for decentralized infrastructure by making it easier to bootstrap decentralized networks (AVSs). However, launching and managing an AVS remains complex and resource-intensive.
+- **Catalysis Core**  
+  The foundational layer that abstracts restaking integrations and exposes **unified staking, slashing and reward primitives**.
+- **Catalysis Coverage**  
+  A risk-coverage protocol that uses Core’s aggregate restaked collateral to **underwrite credit protection, stablecoins and structured yield products**.
+- **Future applications**  
+  **Stablecoins, DeFi liquidity layers, RWA markets** and other protocols can plug into Core to leverage shared security without re-implementing restaking logic.
 
-Teams must navigate a wide range of challenges. This includes integrating with restaking protocols, configuring slashing and reward mechanisms, managing a node operator set and ensuring cross-restaking protocol composability.
+By removing integration overhead, Catalysis gives developers a **single interface** to launch next-generation protocols that inherit deep economic security — **no direct restaking engineering required**.
 
-Catalysis eliminates these barriers, making it easier, faster and more cost-efficient to build and operate AVSs.
+![3D Visualization](/img/3D.svg)
 
-The key benefits of building an AVS using Catalysis include:
-
-1. **Multi-Ecosystem Security:** Seamlessly integrate restaking protocols across major PoS chains like **Babylon (Bitcoin), Ethereum and Solana**.
-2. **Accelerated GTM:** Launch faster with developer-friendly SDKs, clear documentation and up to **80% savings on AVS development costs**.
-3. **Unmatched Economic Security:** Tap into **$20B+ in combined TVL** across restaking protocols - ensuring your AVS has the strongest possible security guarantees.
-4. **Resilient Infrastructure:** Spread risk across multiple restaking protocols, ensuring your AVS is **robust and reliable** even in adverse conditions across the restaking ecosystem.
-4. **Composability at Scale:** Unlock **composable, interoperable crypto-economic security** across restaking protocols.
-5. **No Vendor Lock-In:** Stay flexible with **modular integrations**, enabling your AVS to expand beyond one ecosystem.
-6. **Dynamic Security Rebalancing:** Real-time control to allocate and **rebalance security** across restaking protocols with a **single unified interface**.
-
-It isn't just about simplifying AVS development - **it’s about unlocking the full potential of shared security**.
-
-## Catalysis Architecture Overview
-
-The Catalysis Network is built on three core components:
-1. **Networks** – Decentralized services, protocols and applications (AVSs) that leverage shared security for verification and decentralization.
-2. **Node Operators** – Entities that run network software, perform validation tasks and secure them using the Catalysis stack through restaking protocols.
-3. **Restaking Protocols** – Also known as shared security protocols, these allow stakers to restake assets (LSTs, ERC-20s, etc.) to provide security for network validation. They function as a marketplace, connecting networks, node operators and stakers.
-
-![Simplified Stack](./arch-101.png)
+Get started by exploring the [Catalysis Core](./catalysis-core/overview.md) to understand the foundational architecture.
