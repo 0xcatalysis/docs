@@ -56,7 +56,7 @@ The **Consensus Module** coordinates distributed agreement on task execution thr
 
 1. **Task Reception:** Receives validated tasks from the listener module
 2. **Leader Election:** Executes configurable leader election strategy based on stake, rotation, or custom algorithms
-3. **Task Processing:** 
+3. **Task Processing:**
    - If node is elected leader: executes the task and creates signed result
    - If node is not leader: waits for signed result from elected leader
 4. **Fallback Handling:** Implements automatic failover with new leader election if current leader fails or times out
