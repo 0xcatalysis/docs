@@ -4,108 +4,121 @@ sidebar_position: 3
 
 # Catalyst-SDK
 
-Catalyst SDK is a set of modular components to build & operate **SSNs (Shared Security Networks)**. It can be considered as a _Swiss Army Knife_ to build **Universal SSNs**. It enables **plug-and-play** functionality with **full customisability** and provides **standard tooling** to build networks the "right way".
+Catalyst SDK is a comprehensive framework for building and managing **Actively Validated Services (AVS)** on the Catalyst network. It can be considered as a _Swiss Army Knife_ to build **Universal AVS**. It enables **plug-and-play** functionality with **full customisability** and provides **standard tooling** to build networks the "right way".
 
-Think of it as "**Cosmos-SDK for building SSNs**". It offers built-in **customizable modules** that facilitate rapid development and flexibility to meet each network's specific needs.
+Think of it as "**Cosmos-SDK for building AVS**". It offers built-in **customizable modules** that facilitate rapid development and flexibility to meet each network's specific needs.
 
-It is written in **Go/Rust**, so it's both performant and fast.
+It is written in **Go**, so it's both performant and fast.
 
 **NOTE: The Catalyst-SDK is currently in Private Devnet. Private Testnet will launch in July 2025.**
 
 ## SDK Modules
 
-The following modules are part of the Catalyst-SDK. (not an exhaustive list)
+The following modules are part of the Catalyst-SDK:
 
 | **Module**      | **Use**                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Application** | This module provides interface APIs for developers to implement their business logic. For example, a ZK prover network would use this module to implement the proving and verification logic of ZK proofs.                                                                                                                                                                                                                  |
-| **Consensus**   | This module provides implementations of consensus algorithms like [QBFT](https://docs.goquorum.consensys.io/configure-and-manage/configure/consensus-protocols/qbft) and [CometBFT](https://docs.cometbft.com/v0.37/introduction/what-is-cometbft). This is particularly useful for SSNs that require a quorum of nodes to reach agreement on a final result.                                                                   |
-| **Networking**  | This module provides APIs to handle all the peer-to-peer (P2P) networking logic. For example, this module can be used to broadcast data to other peers or operators in the network.                                                                                                                                                                                                                                             |
-| **Staking**     | This module reads on-chain data to determine the operator set and their associated stakes. Application logic can use this data for leader election, essentially deciding which operator will perform a given task at any specific time.                                                                                                                                                                                         |
-| **Slasher**     | This module implements the slashing logic of the network. Slashing actions are signed, broadcast, and verified by all active operators. Once all operators have signed the slashing requests, the slasher module publishes the slashing data on-chain to catalysis contracts for execution.                                                                                                                                 |
-| **Rewards**     | This module implements the rewards logic of the network. Rewards are based on actions performed by the application module according to the SSN business logic. The rewards module triggers the on-chain distribution of rewards through catalysis core contracts.                                                                                                                                                           |
-| **Crypto**      | This module provides secure private key management with widely adopted signature schemes. It supports [ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm), [BLS](https://eth2book.info/capella/part2/building_blocks/signatures/), and [Schnorr](https://en.wikipedia.org/wiki/Schnorr_signature) signatures, as well as threshold signatures, Shamir Secret Sharing, and popular hash functions. |
-| **Cross-Chain** | This module provides cross-chain compatibility for SSN teams, enabling them to execute tasks on any chain of their choice based on their requirements (such as reducing gas fees, faster block times, etc.). It also allows SSNs to distribute rewards and execute slashings from any chain they prefer.                                                                                                                        |
+| **BaseApp**     | Core application framework that coordinates all components. Provides lifecycle management, dependency injection through wiring, and serves as the entry point for AVS applications. Handles initialization and orchestration of P2P, consensus, execution, state management, and HTTP server components.                                                                                                                         |
+| **Listener**    | Entry point for task ingestion from various sources (HTTP APIs, smart contract events, external services). Validates incoming tasks, broadcasts them via P2P to other nodes, and forwards valid tasks to the consensus engine for processing.                                                                                                                                                                                  |
+| **Consensus**   | Implements distributed consensus mechanisms with customizable leader election strategies. Manages task lifecycle, coordinates leader election per task round, ensures fault tolerance through fallback handling, and forwards signed results to the execution module. Supports pluggable consensus algorithms and stake-based leader selection.                                                                                    |
+| **Execution**   | Validates signed results from consensus, implements custom AVS business logic through TaskHandler interface, manages attestation creation and broadcasting, collects attestations from network peers, and forwards aggregated attestations to the submitter when quorum is reached. Provides framework for secure task execution and verification.                                                                                |
+| **Submitter**   | Finalizes tasks by submitting aggregated attestations to on-chain TaskManager contracts. Handles blockchain transactions with retry mechanisms, supports both ECDSA and BLS signature schemes, manages transaction confirmation, and triggers post-submission logic. Implements concurrent submission with exponential backoff for failed attempts.                                                                                |
+| **Crypto**      | Comprehensive cryptographic module supporting ECDSA and BLS keys with encrypted storage. Provides secure key generation, management, and signing operations. Supports multiple key types (P2P, task signing, submitter keys), implements keystore with passphrase protection, and offers both raw and high-level cryptographic operations.                                                                                      |
+| **P2P**         | Handles peer-to-peer networking using libp2p protocols. Implements peer discovery, connection management, message broadcasting and routing between nodes. Supports customizable stream handlers, error responders, and metadata exchange. Provides health monitoring and automatic reconnection mechanisms for robust multi-node communication.                                                                                    |
+| **State**       | Manages persistent application state across the AVS lifecycle. Provides key-value storage interface for module data, handles state synchronization between components, and supports state queries and updates. Used by various modules to store configuration, peer information, and task processing state.                                                                                                                        |
+| **Server**      | HTTP API server providing external communication endpoints. Integrates with the listener module to receive tasks via REST APIs, exposes health checks and metrics endpoints, and supports custom route handlers for AVS-specific functionality. Includes both main API server and optional metrics server.                                                                                                                         |
 
 ## Core Modules
 
 ### 1. Listener Module
 
-The **Listener** module is the entry point of the **Network** pipeline. It acts as an abstract interface for receiving tasks from various sources. These sources could include off-chain APIs, smart contracts events, internal services, or external data feeds.
+The **Listener** module serves as the entry point for task ingestion into the AVS network. It acts as a central hub that receives tasks from various sources and coordinates their distribution across the network.
 
 **Responsibilities:**
 
-- Implemented by all task ingestion modules.
-- Collect tasks from one or more **Task Sources**.
-- Normalize and validate incoming tasks.
-- Forward the valid tasks into the network for consensus and processing.
-- Trigger the **Broadcast Task** mechanism that propagates tasks to all nodes.
+- Receive tasks from multiple sources (HTTP APIs, smart contract events, gRPC services, internal modules)
+- Validate task structure and integrity before processing
+- Broadcast tasks to all network peers via P2P communication
+- Forward validated tasks to the consensus engine for leader election and processing
+- Handle task timeouts and prevent processing of expired tasks
+
+**Core Flow:**
+
+1. **Task Reception:** Accepts tasks from any input source with validation
+2. **Task Broadcasting:** Distributes tasks to all network participants via P2P
+3. **Consensus Forwarding:** Submits tasks to consensus engine for coordinated processing
 
 ### 2. Consensus Module
 
-The **Consensus Module** coordinates the distributed agreement on task outcomes. Upon task reception, it ensures each task is processed in a leader-driven yet fault-tolerant manner.
+The **Consensus Module** coordinates distributed agreement on task execution through a leader-driven consensus mechanism with customizable strategies.
 
 **Core Flow:**
 
-1. **Task Reception:** Upon task reception from listener, the consensus engine starts the task processing round (if it's not already in progress).
-2. **Leader Election:** Nodes participate in leader election.
-    - If the node is elected leader, it proceeds to execute the task.
-    - If not, it waits for the signed result from the leader to attest.
-3. **Fallback Handling:**
-    - If no signed result is received within the expected time or if a failover is triggered due to a timeout or faulty leader, a new leader is elected for the next round, and the process is repeated.
-    - The system continues initiating new rounds whenever the leader fails to deliver a signed result before the round timeout, until the overall task timeout is reached.
+1. **Task Reception:** Receives validated tasks from the listener module
+2. **Leader Election:** Executes configurable leader election strategy based on stake, rotation, or custom algorithms
+3. **Task Processing:** 
+   - If node is elected leader: executes the task and creates signed result
+   - If node is not leader: waits for signed result from elected leader
+4. **Fallback Handling:** Implements automatic failover with new leader election if current leader fails or times out
+5. **Result Distribution:** Broadcasts signed results to the execution module for attestation
 
 **Responsibilities:**
 
-- Manage task lifecycle and deduplicate concurrent attempts.
-- Elect a leader per task round. (do not consider previous leader in the next round election leader mechanism)
-- Ensure results are signed by the leader and shared with the network.
-- Relay the `SignedResult` to the **Execution Module** for further attestation.
+- Manage task lifecycle with deduplication of concurrent attempts
+- Execute pluggable leader election strategies (stake-based, round-robin, custom)
+- Coordinate task execution with timeout and retry mechanisms
+- Ensure signed results are properly distributed across the network
+- Handle consensus failures through automatic leader re-election
 
 ### 3. Execution Module
 
-The **Execution Module** validates the `SignedResult` received from the Consensus Module and initiates a collective attestation process.
+The **Execution Module** validates signed results and orchestrates the attestation process across network participants.
 
 **Core Flow:**
 
-1. Receives `SignedResult`.
-2. Validates the result and prepares attestation.
-3. Broadcasts attestation to the network.
-4. Waits for peer attestations and aggregates them.
-5. On quorum completion, forwards the aggregated attestations to the **Submitter Module**.
+1. **Result Validation:** Receives and validates signed results from consensus
+2. **Business Logic Execution:** Runs custom AVS logic through TaskHandler interface
+3. **Attestation Creation:** Generates cryptographic attestations for validated results
+4. **Network Broadcasting:** Distributes attestations to all network peers
+5. **Quorum Collection:** Aggregates incoming attestations until threshold is met
+6. **Submission Trigger:** Forwards aggregated attestations to submitter when quorum is achieved
 
 **Responsibilities:**
 
-- Validate the correctness of the signed task result.
-- Broadcast attestation to other peers.
-- Listen and store incoming attestations from the network.
-- Monitor attestation threshold: wait until enough attestations are collected to meet the protocol's requirement.
-
-**Built-In Resilience:**
-
-- Attestation timeout recovery.
-- Resubmission or rollback on attestation mismatch.
+- Validate correctness of signed task results using custom verification logic
+- Execute AVS-specific business logic through pluggable TaskHandler interface
+- Create and broadcast cryptographic attestations to network peers
+- Monitor and collect attestations from other validators
+- Aggregate attestations and verify quorum requirements are met
+- Handle attestation timeouts and mismatch scenarios with recovery mechanisms
 
 ### 4. Submitter Module
 
-The **Submitter Module** is responsible for finalizing the task by committing the result on-chain and triggering any post-processing logic.
+The **Submitter Module** handles the final step of task processing by committing results to the blockchain and managing post-processing workflows.
+
+**Core Flow:**
+
+1. **Attestation Reception:** Receives aggregated attestations from execution module
+2. **Blockchain Submission:** Submits attestations to TaskManager smart contracts
+3. **Transaction Management:** Handles gas estimation, transaction broadcasting, and confirmation
+4. **Retry Logic:** Implements exponential backoff for failed submissions
+5. **Post-Processing:** Executes custom callbacks and triggers reward distribution
 
 **Responsibilities:**
 
-- Submit the aggregated attestation set to the `TaskManager` smart contract.
-- Ensure transaction inclusion and confirmation on the blockchain.
-- Invoke custom post-submission logic provided by the SSN developer (e.g., callbacks, rewards distribution, logging, etc.).
-- Handle retries in case of failed on-chain submission.
-
-**Security Considerations:**
-
-- Re-check attestation correctness before submission.
+- Submit aggregated attestation sets to on-chain TaskManager contracts
+- Support both ECDSA and BLS signature schemes for different blockchain requirements
+- Manage transaction lifecycle with proper gas handling and confirmation monitoring
+- Implement robust retry mechanisms with exponential backoff for network issues
+- Handle concurrent submissions through goroutine-based processing
+- Execute post-submission logic including rewards distribution and logging
 
 ## **Supporting Libraries**
 
-1. **Crypto Library** – Manages key generation, signing, and cryptographic operations for supported key types.
-2. **P2P Networking Library** – Facilitates operator communication via peer discovery, relay, and message broadcasting.
-3. **Observability Library** – Provides monitoring (Prometheus/Grafana), tracing (Jaeger), logging (Loki), and performance profiling (pprof).
+1. **Types Library** – Defines core data structures (Task, SignedResult, Attestation) and interfaces (TaskHandler, Module) used across all components
+2. **Errors Library** – Provides structured error handling with context and wrapping capabilities for better debugging and monitoring
+3. **Log Library** – Implements structured logging with configurable levels, topics, and output formats for comprehensive observability
+4. **Z Library** – Offers logging field utilities for consistent and efficient log message construction across all modules
 
 ## **Flow Diagram**
 
