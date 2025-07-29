@@ -2,19 +2,17 @@
 sidebar_position: 3
 ---
 
-# Catalyst-SDK
+# Core-SDK
 
-Catalyst SDK is a comprehensive framework for building and managing **Actively Validated Services (AVS)** on the Catalyst network. It can be considered as a _Swiss Army Knife_ to build **Universal AVS**. It enables **plug-and-play** functionality with **full customisability** and provides **standard tooling** to build networks the "right way".
+**Core SDK** is a comprehensive framework for building and managing **Shared Security Networks (SSNs)** on the Catalysis Network. It can be considered as a _Swiss Army Knife_ to build **Universal Networks**. It enables **plug-and-play** functionality with **full customisability** and provides **standard tooling** to build networks the "right way".
 
-Think of it as "**Cosmos-SDK for building AVS**". It offers built-in **customizable modules** that facilitate rapid development and flexibility to meet each network's specific needs.
+Think of it as "**Cosmos-SDK for building SSNs**". It offers built-in **customizable modules** that facilitate rapid development and flexibility to meet each network's specific needs.
 
 It is written in **Go**, so it's both performant and fast.
 
-**NOTE: The Catalyst-SDK is currently in Private Devnet. Private Testnet will launch in July 2025.**
-
 ## SDK Modules
 
-The following modules are part of the Catalyst-SDK:
+The following modules are part of the Core-SDK:
 
 | **Module**      | **Use**                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
