@@ -102,6 +102,63 @@ Catalysis seamlessly integrates with leading restaking protocols through special
 - **Real-time Monitoring**: Continuous tracking of network health and performance
 - **Upgradeable Infrastructure**: Future-proof architecture that evolves with ecosystem needs
 
+## Contract Interactions
+
+Understanding how Catalysis contracts interact provides insight into the protocol's operational flow. Below are the key interaction patterns that enable secure, scalable AVS operations.
+
+### AVS Deployment
+
+```mermaid
+sequenceDiagram
+    participant Dev as AVS Developer
+    participant CM as CatalysisManager
+    participant Core as Core Contracts
+    
+    Dev->>CM: Deploy AVS
+    CM->>Core: Initialize Components
+    Core->>Core: Configure Network
+    CM-->>Dev: AVS Ready
+```
+
+The deployment process establishes a complete AVS infrastructure through a single transaction, automatically configuring all necessary components for immediate operation.
+
+### Operator Onboarding
+
+```mermaid
+sequenceDiagram
+    participant Op as Operator
+    participant Net as Network
+    participant Stake as StakeManager
+    participant Rest as Restaking Protocol
+    
+    Op->>Net: Register Intent
+    Net->>Stake: Process Registration
+    Stake->>Rest: Verify Eligibility
+    Rest-->>Stake: Confirm Status
+    Stake-->>Op: Registration Complete
+```
+
+Operators join the network through a streamlined process that verifies their eligibility and establishes their participation across all integrated restaking protocols.
+
+### Task Execution Flow
+
+```mermaid
+sequenceDiagram
+    participant Exec as Task Executor
+    participant Att as Attesters
+    participant Task as TaskManager
+    participant Net as Network
+    
+    Exec->>Exec: Execute Task
+    Exec->>Task: Submit Result
+    Task->>Att: Request Attestations
+    Att->>Task: Provide Attestations
+    Task->>Net: Verify Consensus
+    Task-->>Exec: Confirm Completion
+```
+
+The task execution model ensures integrity through multi-party attestation and consensus verification, providing robust validation of all network operations.
+
 ## Getting Started
 
 For AVS developers looking to leverage Catalysis smart contracts:
