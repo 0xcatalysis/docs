@@ -19,6 +19,7 @@ It introduces a new primitive called **Shared Security Abstraction (SSA)** that 
 ## Core Architecture Overview
 
 The **Catalysis Core** is built on three core components:
+
 1. **Networks** – Decentralized services, protocols and applications (SSNs) that leverage shared security for verification and decentralization.
 2. **Node Operators** – Entities that run network software, perform validation tasks and secure them using the Catalysis stack through restaking protocols.
 3. **Restaking Protocols** – Also known as shared security protocols, these allow stakers to restake assets (LSTs, ERC-20s, etc.) to provide security for network validation. They function as a marketplace, connecting networks, node operators and stakers.
@@ -45,9 +46,9 @@ The key benefits of building an SSN using **Catalysis Core** include:
 2. **Accelerated GTM:** Launch faster with developer-friendly SDKs, clear documentation and up to **80% savings on SSN development costs**.
 3. **Unmatched Economic Security:** Tap into **$20B+ in combined TVL** across restaking protocols - ensuring your SSN has the strongest possible security guarantees.
 4. **Resilient Infrastructure:** Spread risk across multiple restaking protocols, ensuring your SSN is **robust and reliable** even in adverse conditions across the restaking ecosystem.
-4. **Composability at Scale:** Unlock **composable, interoperable crypto-economic security** across restaking protocols.
-5. **No Vendor Lock-In:** Stay flexible with **modular integrations**, enabling your SSN to expand beyond one ecosystem.
-6. **Dynamic Security Rebalancing:** Real-time control to allocate and **rebalance security** across restaking protocols with a **single unified interface**.
+5. **Composability at Scale:** Unlock **composable, interoperable crypto-economic security** across restaking protocols.
+6. **No Vendor Lock-In:** Stay flexible with **modular integrations**, enabling your SSN to expand beyond one ecosystem.
+7. **Dynamic Security Rebalancing:** Real-time control to allocate and **rebalance security** across restaking protocols with a **single unified interface**.
 
 It isn't just about simplifying SSN development - **it’s about unlocking the full potential of shared security**.
 

@@ -9,10 +9,12 @@ sidebar_position: 1
 A Network in the Catalysis ecosystem refers to any decentralized protocol that provides custom verification mechanisms of off-chain operations. A Network is composed of on-chain contracts for verification and an off-chain network of Operators. The off-chain part consists of client software run by network operators and network-specific validation logic.
 
 Operators execute the service on behalf of the Network and then post evidence of their execution on-chain to the Network contracts. Operators play a critical role in ensuring network integrity:
+
 - If the Operators perform tasks properly, the Network can distribute rewards.
 - If the Operators perform tasks maliciously, their delegate stake can be slashed by the Network.
 
 Different restaking ecosystems have different names for these Networks:
+
 - [EigenLayer](https://www.eigenlayer.xyz/): Autonomous Verifiable Service **(AVS)**
 - [Symbiotic](https://www.symbiotic.fi/): **Network**
 - [Satlayer](https://www.satlayer.xyz/): Bitcoin Validated Service **(BVS)**
@@ -47,6 +49,7 @@ The scope of Network design is broad. The Catalysis Network supports a wide rang
 The only requirement is that evidence of off-chain execution must be posted on-chain to enable verification.
 
 Example Use Cases:
+
 - **Rollups** → Secure L2 scaling solutions.
 - **Data Availability Networks** → Ensure reliable, censorship-resistant data storage.
 - **Decentralized AI** → On-chain verification of AI models and inference.

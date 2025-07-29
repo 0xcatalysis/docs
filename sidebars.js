@@ -24,7 +24,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Network',
-          items: ['catalysis-core/network/intro', 'catalysis-core/network/catalyst-sdk', 'catalysis-core/network/contracts', 'catalysis-core/network/integration', 'catalysis-core/network/faqs'],
+          items: ['catalysis-core/network/intro', 'catalysis-core/network/quickstart', 'catalysis-core/network/catalyst-sdk', 'catalysis-core/network/contracts', 'catalysis-core/network/integration', 'catalysis-core/network/faqs'],
         },
         {
           type: 'category',

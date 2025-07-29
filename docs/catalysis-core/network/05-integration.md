@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Integration
@@ -11,9 +11,11 @@ This guide walks through the integration flow for an SSN. The process is split i
 3. **Deployment Phase** – Package the implementation and hand off to operators.
 
 ## 1. **Setup Phase**
+
 This phase is focused on bootstrapping your network.
 
 ### 🔹 Step 1: Deploy Smart Contracts
+
 Use the Lumos CLI to deploy the three core contracts for SSN:
 
 - `NetworkManager`
@@ -25,6 +27,7 @@ You’ll need to provide details like the **Network Name, SSN Metadata, Chain ID
 ```bash
 lumos network register --flags
 ```
+
 This deploys the contracts to your specified chain (e.g., Sepolia, or Holesky) and returns a network output JSON with all deployed contract addresses.
 
 ### 🔹 Step 2: Share Deployment Info with Operators
@@ -34,6 +37,7 @@ Once deployed, share the contract addresses and network metadata with your opera
 ### 🔹 Step 3: Operator Registration
 
 Operators must install the Lumos CLI and register themselves with the AVS using:
+
 ```bash
 lumos network register operator --flags
 ```
@@ -41,6 +45,7 @@ lumos network register operator --flags
 Each operator provides their `operator metadata`, `p2p_peer_id` (used for validator identity) and any additional information needed for your network.
 
 The command:
+
 - Registers the operator with the NetworkManager
 - Binds them to the deployed SSN contracts
 - Stores their registration info on-chain
@@ -50,11 +55,15 @@ The command:
 ### 🔹 Step 4: AVS Owner Adds Committees and Vaults
 
 Once operators are registered, the AVS owner configures the network’s security structure:
+
 - Create committees using:
+
 ```bash
 lumos committee create --flags
 ```
+
 - Add vaults (representing sources of economic security) to each committee:
+
 ```bash
 lumos vault add --flags
 ```
@@ -62,6 +71,7 @@ lumos vault add --flags
 The vaults are registered with the `StakeManager` and mapped to the corresponding committees.
 
 These vaults are later used to:
+
 - Verify the stake backing each operator
 - Resolve slashing or reward logic
 
@@ -80,6 +90,7 @@ lumos scaffold --flags
 ```
 
 This creates a basic project structure with two key functions:
+
 - `execute()` — defines how your SSN handles a task
 - `verify()` — defines how task results are validated
 
@@ -90,6 +101,7 @@ Implement the `execute` and `verify` methods with your custom task logic. This i
 ### ⚙️ Step 3: Package the SSN Client
 
 Once the logic is implemented:
+
 - Package the SSN code as a Docker image
 - Prepare a `config.yaml` file with:
   - Deployed contract addresses (from Setup Phase)
@@ -109,6 +121,7 @@ Once your AVS logic is packaged:
 - Operators run the SSN client using this image + config.
 
 The config should include:
+
 - `TaskManager`, `StakeManager`, and `NetworkManager` contract addresses
 - Vault and committee references (as configured in the setup phase)
 - Any other network-specific runtime parameters
