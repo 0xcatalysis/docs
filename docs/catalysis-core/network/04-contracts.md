@@ -38,7 +38,7 @@ The economic security layer that interfaces with multiple restaking protocols to
 
 **Key Capabilities:**
 
-- **Multi-Protocol Integration**: Native support for Symbiotic, with EigenLayer and others coming soon
+- **Multi-Protocol Integration**: Native support for Symbiotic and EigenLayer with others coming soon
 - **Stake Aggregation**: Real-time tracking of operator stakes across multiple vaults
 - **Committee Assignment**: Intelligent stake-weighted operator assignment to committees
 
@@ -52,21 +52,6 @@ The execution layer that handles task submissions, attestations, and consensus m
 - **Multi-Signature Support**: Both ECDSA and BLS signature schemes for different use cases
 - **Consensus Mechanisms**: Configurable voting thresholds and approval processes
 - **Zero-Knowledge Integration**: Support for ZK proof-based task verification (coming soon)
-
-## Restaking Integration
-
-Catalysis seamlessly integrates with leading restaking protocols through specialized adapter modules:
-
-### Symbiotic Integration
-
-- **Native Support**: Direct integration with Symbiotic's vault and delegation architecture
-- **Flexible Staking**: Support for both NetworkRestake and FullRestake delegation models
-- **Real-time Updates**: Dynamic stake tracking and committee rebalancing
-
-### Multi-Protocol Future
-
-- **EigenLayer**: Integration in active development
-- **Extensible Design**: Architecture ready for additional restaking protocols
 
 ## Economic Incentives
 
