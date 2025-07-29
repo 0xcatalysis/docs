@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Catalyst-SDK
@@ -12,7 +12,7 @@ It is written in **Go/Rust**, so it's both performant and fast.
 
 **NOTE: The Catalyst-SDK is currently in Private Devnet. Private Testnet will launch in July 2025.**
 
-# SDK Modules
+## SDK Modules
 
 The following modules are part of the Catalyst-SDK. (not an exhaustive list)
 
