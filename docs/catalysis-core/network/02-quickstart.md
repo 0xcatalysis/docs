@@ -27,13 +27,25 @@ Before starting, ensure you have:
 
 We'll use the official Lumos CLI Docker image:
 
-```bash
-# Pull the latest image
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Pull the latest image
 docker pull ghcr.io/0xcatalysis/lumos-cli:v0.2.0
 
 # Create an alias for easier usage
-alias lumos="docker run --rm -v \$(pwd):/workspace -v \$HOME/.catalyst:/root/.catalyst ghcr.io/0xcatalysis/lumos-cli:v0.2.0"
-```
+alias lumos="docker run --rm -v \\$(pwd):/workspace -v \\$HOME/.catalyst:/root/.catalyst ghcr.io/0xcatalysis/lumos-cli:v0.2.0"`}
+</div>
 
 The volume mounts ensure:
 
@@ -46,17 +58,29 @@ The volume mounts ensure:
 
 Your AVS needs three types of keys for different operations:
 
-```bash
-# Generate all keys at once (recommended)
-lumos key generate-all \
-  --task-signing-key-type ecdsa \
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Generate all keys at once (recommended)
+lumos key generate-all \\
+  --task-signing-key-type ecdsa \\
   --passphrase-file /workspace/passphrase.txt
 
 # OR generate keys individually
 lumos key generate --name p2p_key --type ecdsa --passphrase-file /workspace/passphrase.txt
 lumos key generate --name submitter_key --type ecdsa --passphrase-file /workspace/passphrase.txt  
-lumos key generate --name task_signing_key --type ecdsa --passphrase-file /workspace/passphrase.txt
-```
+lumos key generate --name task_signing_key --type ecdsa --passphrase-file /workspace/passphrase.txt`}
+</div>
 
 **Key Types:**
 
@@ -72,16 +96,28 @@ lumos key generate --name task_signing_key --type ecdsa --passphrase-file /works
 
 ### Step 2: List and Verify Keys
 
-```bash
-# List all generated keys
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# List all generated keys
 lumos key list
 
 # Import existing keys if needed
-lumos key import \
-  --name existing_key \
-  --passphrase-file /workspace/passphrase.txt \
-  --private-key-file /workspace/private_key.txt
-```
+lumos key import \\
+  --name existing_key \\
+  --passphrase-file /workspace/passphrase.txt \\
+  --private-key-file /workspace/private_key.txt`}
+</div>
 
 ## Phase 2: Network Deployment
 
@@ -89,15 +125,27 @@ lumos key import \
 
 Deploy the core smart contracts for your AVS:
 
-```bash
-lumos network register \
-  --name "MyAwesomeAVS" \
-  --metadata "https://myavs.com/metadata.json" \
-  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID" \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
-  --output-file /workspace/network_config.json
-```
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`lumos network register \\
+  --name "MyAwesomeAVS" \\
+  --metadata "https://myavs.com/metadata.json" \\
+  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID" \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
+  --output-file /workspace/network_config.json`}
+</div>
 
 **Required Parameters:**
 
@@ -117,26 +165,38 @@ lumos network register \
 
 Add vaults that provide economic security to your network:
 
-```bash
-# Add a vault to committee 0
-lumos network add-vault \
-  --output-file /workspace/network_config.json \
-  --vault-address "0x742d35Cc6634C0532925a3b8D3Ac3C3A8D3Ce0C4" \
-  --committee-id 0 \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Add a vault to committee 0
+lumos network add-vault \\
+  --output-file /workspace/network_config.json \\
+  --vault-address "0x742d35Cc6634C0532925a3b8D3Ac3C3A8D3Ce0C4" \\
+  --committee-id 0 \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
   --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
 
 # Set maximum network limit for the vault
-lumos network set-max-limit \
-  --output-file /workspace/network_config.json \
-  --vault-address "0x742d35Cc6634C0532925a3b8D3Ac3C3A8D3Ce0C4" \
-  --committee-id 0 \
-  --amount 1000000000000000000 \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
-  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
-```
+lumos network set-max-limit \\
+  --output-file /workspace/network_config.json \\
+  --vault-address "0x742d35Cc6634C0532925a3b8D3Ac3C3A8D3Ce0C4" \\
+  --committee-id 0 \\
+  --amount 1000000000000000000 \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
+  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"`}
+</div>
 
 **Vault Configuration:**
 
@@ -148,25 +208,37 @@ lumos network set-max-limit \
 
 Define the types of tasks your AVS will handle:
 
-```bash
-# Set task type for committee 0
-lumos network set-task-type \
-  --output-file /workspace/network_config.json \
-  --committee-id 0 \
-  --task-type 1 \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Set task type for committee 0
+lumos network set-task-type \\
+  --output-file /workspace/network_config.json \\
+  --committee-id 0 \\
+  --task-type 1 \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
   --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
 
 # Set task majority threshold (e.g., 67% = 6700)
-lumos network set-task-majority \
-  --output-file /workspace/network_config.json \
-  --committee-id 0 \
-  --task-majority 6700 \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
-  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
-```
+lumos network set-task-majority \\
+  --output-file /workspace/network_config.json \\
+  --committee-id 0 \\
+  --task-majority 6700 \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
+  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"`}
+</div>
 
 **Task Configuration:**
 
@@ -179,30 +251,54 @@ lumos network set-task-majority \
 
 Operators can register themselves to participate in your network:
 
-```bash
-# Register an operator
-lumos network register-operator \
-  --output-file /workspace/network_config.json \
-  --operator-address "0x1234567890123456789012345678901234567890" \
-  --peer-id "12D3KooWGjwvskBvG7GfqCYWDFfr6CvV8y7Z5aPTq5F4sB9nErWX" \
-  --public-key "0x04abc123..." \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
-  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
-```
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Register an operator
+lumos network register-operator \\
+  --output-file /workspace/network_config.json \\
+  --operator-address "0x1234567890123456789012345678901234567890" \\
+  --peer-id "12D3KooWGjwvskBvG7GfqCYWDFfr6CvV8y7Z5aPTq5F4sB9nErWX" \\
+  --public-key "0x04abc123..." \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
+  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"`}
+</div>
 
 ### Step 7: Add Operators to Committees
 
-```bash
-# Add operator to committee 0
-lumos network add-operator \
-  --output-file /workspace/network_config.json \
-  --operator-address "0x1234567890123456789012345678901234567890" \
-  --committee-id 0 \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
-  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
-```
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Add operator to committee 0
+lumos network add-operator \\
+  --output-file /workspace/network_config.json \\
+  --operator-address "0x1234567890123456789012345678901234567890" \\
+  --committee-id 0 \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
+  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"`}
+</div>
 
 ## Phase 4: Development & Deployment
 
@@ -210,12 +306,24 @@ lumos network add-operator \
 
 Generate boilerplate code for your custom AVS logic:
 
-```bash
-lumos scaffold \
-  --avs-name "MyAwesomeAVS" \
-  --task-names "DataValidation,ComputeProof" \
-  --github-username "your-github-username"
-```
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`lumos scaffold \\
+  --avs-name "MyAwesomeAVS" \\
+  --task-names "DataValidation,ComputeProof" \\
+  --github-username "your-github-username"`}
+</div>
 
 **Scaffold Output:**
 
@@ -228,15 +336,27 @@ lumos scaffold \
 
 For local testing and development, start a relay node to facilitate P2P communication:
 
-```bash
-lumos relay \
-  --key-id p2p_key \
-  --http-address 127.0.0.1:3600 \
-  --p2p-tcp-address 127.0.0.1:3500 \
-  --p2p-advertise-private-addresses \
-  --p2p-relay-loglevel debug \
-  --passphrase-file /workspace/passphrase.txt
-```
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`lumos relay \\
+  --key-id p2p_key \\
+  --http-address 127.0.0.1:3600 \\
+  --p2p-tcp-address 127.0.0.1:3500 \\
+  --p2p-advertise-private-addresses \\
+  --p2p-relay-loglevel debug \\
+  --passphrase-file /workspace/passphrase.txt`}
+</div>
 
 **Relay Configuration:**
 
@@ -250,25 +370,37 @@ lumos relay \
 
 ### Removing Assets and Operators
 
-```bash
-# Remove a vault from the network
-lumos network remove-vault \
-  --output-file /workspace/network_config.json \
-  --vault-address "0x742d35Cc6634C0532925a3b8D3Ac3C3A8D3Ce0C4" \
-  --committee-id 0 \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Remove a vault from the network
+lumos network remove-vault \\
+  --output-file /workspace/network_config.json \\
+  --vault-address "0x742d35Cc6634C0532925a3b8D3Ac3C3A8D3Ce0C4" \\
+  --committee-id 0 \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
   --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
 
 # Remove an operator from the network
-lumos network remove-operator \
-  --output-file /workspace/network_config.json \
-  --operator-address "0x1234567890123456789012345678901234567890" \
-  --committee-id 0 \
-  --private-key-name submitter_key \
-  --passphrase-file /workspace/passphrase.txt \
-  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"
-```
+lumos network remove-operator \\
+  --output-file /workspace/network_config.json \\
+  --operator-address "0x1234567890123456789012345678901234567890" \\
+  --committee-id 0 \\
+  --private-key-name submitter_key \\
+  --passphrase-file /workspace/passphrase.txt \\
+  --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID"`}
+</div>
 
 ## Security Best Practices
 
@@ -295,19 +427,43 @@ For more detailed information, check out the [Integration Guide](./integration) 
 
 **Docker Volume Permissions**:
 
-```bash
-# Fix permission issues on Linux/macOS
-sudo chown -R $USER:$USER ~/.catalyst
-```
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Fix permission issues on Linux/macOS
+sudo chown -R \\$USER:\\$USER ~/.catalyst`}
+</div>
 
 **Key Not Found**:
 
-```bash
-# Verify keys exist
+<div style={{
+  fontFamily: 'Roboto, monospace',
+  fontWeight: 'bold',
+  backgroundColor: '#f6f8fa',
+  border: '1px solid #d1d9e0',
+  borderRadius: '6px',
+  padding: '16px',
+  margin: '16px 0',
+  fontSize: '14px',
+  lineHeight: '1.45',
+  color: '#24292f',
+  whiteSpace: 'pre-wrap'
+}}>
+{`# Verify keys exist
 lumos key list
 # Check key directory permissions
-ls -la ~/.catalyst/keys
-```
+ls -la ~/.catalyst/keys`}
+</div>
 
 **RPC Connection Issues**:
 
