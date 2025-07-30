@@ -16,21 +16,21 @@ The following modules are part of the Core-SDK:
 
 | **Module**      | **Use**                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **BaseApp**     | Core application framework that coordinates all components. Provides lifecycle management, dependency injection through wiring, and serves as the entry point for AVS applications. Handles initialization and orchestration of P2P, consensus, execution, state management, and HTTP server components.                                                                                                                         |
+| **BaseApp**     | Core application framework that coordinates all components. Provides lifecycle management, dependency injection through wiring, and serves as the entry point for SSN applications. Handles initialization and orchestration of P2P, consensus, execution, state management, and HTTP server components.                                                                                                                         |
 | **Listener**    | Entry point for task ingestion from various sources (HTTP APIs, smart contract events, external services). Validates incoming tasks, broadcasts them via P2P to other nodes, and forwards valid tasks to the consensus engine for processing.                                                                                                                                                                                  |
 | **Consensus**   | Implements distributed consensus mechanisms with customizable leader election strategies. Manages task lifecycle, coordinates leader election per task round, ensures fault tolerance through fallback handling, and forwards signed results to the execution module. Supports pluggable consensus algorithms and stake-based leader selection.                                                                                    |
-| **Execution**   | Validates signed results from consensus, implements custom AVS business logic through TaskHandler interface, manages attestation creation and broadcasting, collects attestations from network peers, and forwards aggregated attestations to the submitter when quorum is reached. Provides framework for secure task execution and verification.                                                                                |
+| **Execution**   | Validates signed results from consensus, implements custom SSN business logic through TaskHandler interface, manages attestation creation and broadcasting, collects attestations from network peers, and forwards aggregated attestations to the submitter when quorum is reached. Provides framework for secure task execution and verification.                                                                                |
 | **Submitter**   | Finalizes tasks by submitting aggregated attestations to on-chain TaskManager contracts. Handles blockchain transactions with retry mechanisms, supports both ECDSA and BLS signature schemes, manages transaction confirmation, and triggers post-submission logic. Implements concurrent submission with exponential backoff for failed attempts.                                                                                |
 | **Crypto**      | Comprehensive cryptographic module supporting ECDSA and BLS keys with encrypted storage. Provides secure key generation, management, and signing operations. Supports multiple key types (P2P, task signing, submitter keys), implements keystore with passphrase protection, and offers both raw and high-level cryptographic operations.                                                                                      |
 | **P2P**         | Handles peer-to-peer networking using libp2p protocols. Implements peer discovery, connection management, message broadcasting and routing between nodes. Supports customizable stream handlers, error responders, and metadata exchange. Provides health monitoring and automatic reconnection mechanisms for robust multi-node communication.                                                                                    |
-| **State**       | Manages persistent application state across the AVS lifecycle. Provides key-value storage interface for module data, handles state synchronization between components, and supports state queries and updates. Used by various modules to store configuration, peer information, and task processing state.                                                                                                                        |
-| **Server**      | HTTP API server providing external communication endpoints. Integrates with the listener module to receive tasks via REST APIs, exposes health checks and metrics endpoints, and supports custom route handlers for AVS-specific functionality. Includes both main API server and optional metrics server.                                                                                                                         |
+| **State**       | Manages persistent application state across the SSN lifecycle. Provides key-value storage interface for module data, handles state synchronization between components, and supports state queries and updates. Used by various modules to store configuration, peer information, and task processing state.                                                                                                                        |
+| **Server**      | HTTP API server providing external communication endpoints. Integrates with the listener module to receive tasks via REST APIs, exposes health checks and metrics endpoints, and supports custom route handlers for SSN-specific functionality. Includes both main API server and optional metrics server.                                                                                                                         |
 
 ## Core Modules
 
 ### 1. Listener Module
 
-The **Listener** module serves as the entry point for task ingestion into the AVS network. It acts as a central hub that receives tasks from various sources and coordinates their distribution across the network.
+The **Listener** module serves as the entry point for task ingestion into the SSN network. It acts as a central hub that receives tasks from various sources and coordinates their distribution across the network.
 
 **Responsibilities:**
 
@@ -75,7 +75,7 @@ The **Execution Module** validates signed results and orchestrates the attestati
 **Core Flow:**
 
 1. **Result Validation:** Receives and validates signed results from consensus
-2. **Business Logic Execution:** Runs custom AVS logic through TaskHandler interface
+2. **Business Logic Execution:** Runs custom SSN logic through TaskHandler interface
 3. **Attestation Creation:** Generates cryptographic attestations for validated results
 4. **Network Broadcasting:** Distributes attestations to all network peers
 5. **Quorum Collection:** Aggregates incoming attestations until threshold is met
@@ -84,7 +84,7 @@ The **Execution Module** validates signed results and orchestrates the attestati
 **Responsibilities:**
 
 - Validate correctness of signed task results using custom verification logic
-- Execute AVS-specific business logic through pluggable TaskHandler interface
+- Execute SSN-specific business logic through pluggable TaskHandler interface
 - Create and broadcast cryptographic attestations to network peers
 - Monitor and collect attestations from other validators
 - Aggregate attestations and verify quorum requirements are met
