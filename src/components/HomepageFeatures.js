@@ -15,7 +15,7 @@ export default function HomepageFeatures() {
                 <h2>Global Price Discovery</h2>
                 <p>
                   Enables global price discovery by aggregating supply (shared
-                  security protocols) & demand (AVSs).
+                  security protocols) & demand (SSNs).
                 </p>
               </div>
             </div>
@@ -38,13 +38,13 @@ export default function HomepageFeatures() {
               <div className="text--center padding-horiz--md">
                 <img
                   src="/img/secure-avs.svg"
-                  alt="Build Robust AVSs"
+                  alt="Build Robust SSNs"
                   className="feature-image"
                   width={200}
                 />
-                <h2>Build Robust AVSs</h2>
+                <h2>Build Robust SSNs</h2>
                 <p>
-                  Protects AVSs from instability caused by the movement of
+                  Protects SSNs from instability caused by the movement of
                   restaked capital between restaking platforms.
                 </p>
               </div>

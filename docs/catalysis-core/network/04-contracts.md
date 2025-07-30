@@ -4,27 +4,27 @@ sidebar_position: 4
 
 # Smart Contracts
 
-Catalysis utilizes a sophisticated smart contract architecture to enable secure, scalable AVS deployment and management. Our contracts serve as the foundational layer that bridges AVS developers with multiple restaking protocols, providing unified access to economic security.
+Catalysis utilizes a sophisticated smart contract architecture to enable secure, scalable SSN deployment and management. Our contracts serve as the foundational layer that bridges SSN developers with multiple restaking protocols, providing unified access to economic security.
 
 ## Architecture Overview
 
-The Catalysis smart contract system employs a modular, upgradeable architecture designed for flexibility and security. At its core, the system consists of several interconnected components that work together to manage AVS lifecycle, operator registration, task execution, and economic incentives.
+The Catalysis smart contract system employs a modular, upgradeable architecture designed for flexibility and security. At its core, the system consists of several interconnected components that work together to manage SSN lifecycle, operator registration, task execution, and economic incentives.
 
 ## Core Components
 
 ### CatalysisManager
 
-The factory contract that serves as the entry point for deploying new AVS instances. It manages the deployment of all core contracts and maintains upgradeability through beacon proxy patterns.
+The factory contract that serves as the entry point for deploying new SSN instances. It manages the deployment of all core contracts and maintains upgradeability through beacon proxy patterns.
 
 **Key Capabilities:**
 
-- **AVS Deployment**: Streamlined deployment of complete AVS infrastructure
+- **SSN Deployment**: Streamlined deployment of complete SSN infrastructure
 - **Upgradeable Architecture**: Secure upgrade mechanisms for evolving protocol needs
 - **Configuration Management**: Centralized management of system parameters
 
 ### NetworkManager  
 
-The orchestration layer that manages AVS operations and administrative functions. This contract serves as the primary interface for AVS configuration and operator management.
+The orchestration layer that manages SSN operations and administrative functions. This contract serves as the primary interface for SSN configuration and operator management.
 
 **Key Capabilities:**
 
@@ -44,7 +44,7 @@ The economic security layer that interfaces with multiple restaking protocols to
 
 ### TaskManager
 
-The execution layer that handles task submissions, attestations, and consensus mechanisms for AVS operations.
+The execution layer that handles task submissions, attestations, and consensus mechanisms for SSN operations.
 
 **Key Capabilities:**
 
@@ -73,7 +73,7 @@ The execution layer that handles task submissions, attestations, and consensus m
 
 - **Unified Interface**: Single integration point for multiple restaking protocols
 - **Reduced Complexity**: Abstract away protocol-specific implementation details
-- **Flexible Configuration**: Customizable parameters for diverse AVS requirements
+- **Flexible Configuration**: Customizable parameters for diverse SSN requirements
 
 ### Economic Security
 
@@ -89,23 +89,23 @@ The execution layer that handles task submissions, attestations, and consensus m
 
 ## Contract Interactions
 
-Understanding how Catalysis contracts interact provides insight into the protocol's operational flow. Below are the key interaction patterns that enable secure, scalable AVS operations.
+Understanding how Catalysis contracts interact provides insight into the protocol's operational flow. Below are the key interaction patterns that enable secure, scalable SSN operations.
 
-### AVS Deployment
+### SSN Deployment
 
 ```mermaid
 sequenceDiagram
-    participant Dev as AVS Developer
+    participant Dev as SSN Developer
     participant CM as CatalysisManager
     participant Core as Core Contracts
     
-    Dev->>CM: Deploy AVS
+    Dev->>CM: Deploy SSN
     CM->>Core: Initialize Components
     Core->>Core: Configure Network
-    CM-->>Dev: AVS Ready
+    CM-->>Dev: SSN Ready
 ```
 
-The deployment process establishes a complete AVS infrastructure through a single transaction, automatically configuring all necessary components for immediate operation.
+The deployment process establishes a complete SSN infrastructure through a single transaction, automatically configuring all necessary components for immediate operation.
 
 ### Operator Onboarding
 
@@ -146,9 +146,9 @@ The task execution model ensures integrity through multi-party attestation and c
 
 ## Getting Started
 
-For AVS developers looking to leverage Catalysis smart contracts:
+For SSN developers looking to leverage Catalysis smart contracts:
 
-1. **Architecture Planning**: Review your AVS requirements and determine optimal committee structure
+1. **Architecture Planning**: Review your SSN requirements and determine optimal committee structure
 2. **Integration Design**: Plan your task execution flow and attestation mechanisms  
 3. **Deployment Preparation**: Prepare operator network and restaking protocol integrations
 4. **Testing Environment**: Utilize our testnet for comprehensive integration testing

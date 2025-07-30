@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Quickstart
 
-This quickstart guide walks you through using the **Lumos CLI** to build and deploy an AVS (Actively Validated Service) on Catalysis Network. We'll use the official Docker image to simplify setup and ensure consistency across environments.
+This quickstart guide walks you through using the **Lumos CLI** to build and deploy an SSN (Shared Security Network) on Catalysis Network. We'll use the official Docker image to simplify setup and ensure consistency across environments.
 
 :::info Access Required
 
@@ -56,7 +56,7 @@ The volume mounts ensure:
 
 ### Step 1: Generate Cryptographic Keys
 
-Your AVS needs three types of keys for different operations:
+Your SSN needs three types of keys for different operations:
 
 <div style={{
   fontFamily: 'Roboto, monospace',
@@ -123,7 +123,7 @@ lumos key import \\
 
 ### Step 3: Register Your Network
 
-Deploy the core smart contracts for your AVS:
+Deploy the core smart contracts for your SSN:
 
 <div style={{
   fontFamily: 'Roboto, monospace',
@@ -139,8 +139,8 @@ Deploy the core smart contracts for your AVS:
   whiteSpace: 'pre-wrap'
 }}>
 {`lumos network register \\
-  --name "MyAwesomeAVS" \\
-  --metadata "https://myavs.com/metadata.json" \\
+  --name "MyAwesomeSSN" \\
+  --metadata "https://myssn.com/metadata.json" \\
   --rpc-url "https://sepolia.infura.io/v3/YOUR_PROJECT_ID" \\
   --private-key-name submitter_key \\
   --passphrase-file /workspace/passphrase.txt \\
@@ -150,7 +150,7 @@ Deploy the core smart contracts for your AVS:
 **Required Parameters:**
 
 - `--name`: Human-readable name for your network
-- `--metadata`: URL to metadata JSON describing your AVS
+- `--metadata`: URL to metadata JSON describing your SSN
 - `--rpc-url`: Ethereum RPC endpoint for contract deployment
 - `--private-key-name`: Name of key for transaction signing
 - `--output-file`: Path to save network configuration (contains contract addresses)
@@ -158,7 +158,7 @@ Deploy the core smart contracts for your AVS:
 **What This Does:**
 
 - Deploys `NetworkManager`, `StakeManager`, and `TaskManager` contracts
-- Registers your AVS on-chain
+- Registers your SSN on-chain
 - Outputs contract addresses and configuration to JSON file
 
 ### Step 4: Configure Network Assets (Vaults)
@@ -206,7 +206,7 @@ lumos network set-max-limit \\
 
 ### Step 5: Configure Task Types
 
-Define the types of tasks your AVS will handle:
+Define the types of tasks your SSN will handle:
 
 <div style={{
   fontFamily: 'Roboto, monospace',
@@ -302,9 +302,9 @@ lumos network add-operator \\
 
 ## Phase 4: Development & Deployment
 
-### Step 8: Scaffold Your AVS Project
+### Step 8: Scaffold Your SSN Project
 
-Generate boilerplate code for your custom AVS logic:
+Generate boilerplate code for your custom SSN logic:
 
 <div style={{
   fontFamily: 'Roboto, monospace',
@@ -320,7 +320,7 @@ Generate boilerplate code for your custom AVS logic:
   whiteSpace: 'pre-wrap'
 }}>
 {`lumos scaffold \\
-  --avs-name "MyAwesomeAVS" \\
+  --SSN-name "MyAwesomeSSN" \\
   --task-names "DataValidation,ComputeProof" \\
   --github-username "your-github-username"`}
 </div>
@@ -414,10 +414,10 @@ lumos network remove-operator \\
 
 After completing this quickstart:
 
-1. **Implement Custom Logic**: Edit the scaffolded code to implement your AVS-specific task execution and verification logic
-2. **Testing**: Test your AVS on testnet before mainnet deployment  
+1. **Implement Custom Logic**: Edit the scaffolded code to implement your SSN-specific task execution and verification logic
+2. **Testing**: Test your SSN on testnet before mainnet deployment  
 3. **Monitoring**: Set up observability and monitoring for your deployed network
-4. **Documentation**: Create operator guides and user documentation for your specific AVS
+4. **Documentation**: Create operator guides and user documentation for your specific SSN
 
 For more detailed information, check out the [Integration Guide](./integration) and [Catalyst SDK Documentation](./catalyst-sdk).
 

@@ -36,7 +36,7 @@ Once deployed, share the contract addresses and network metadata with your opera
 
 ### 🔹 Step 3: Operator Registration
 
-Operators must install the Lumos CLI and register themselves with the AVS using:
+Operators must install the Lumos CLI and register themselves with the SSN using:
 
 ```bash
 lumos network register operator --flags
@@ -50,11 +50,11 @@ The command:
 - Binds them to the deployed SSN contracts
 - Stores their registration info on-chain
 
-📌 **This step is initiated by the operator, but requires contract details from the AVS developer.**
+📌 **This step is initiated by the operator, but requires contract details from the SSN developer.**
 
-### 🔹 Step 4: AVS Owner Adds Committees and Vaults
+### 🔹 Step 4: SSN Owner Adds Committees and Vaults
 
-Once operators are registered, the AVS owner configures the network’s security structure:
+Once operators are registered, the SSN owner configures the network’s security structure:
 
 - Create committees using:
 
@@ -115,7 +115,7 @@ With everything in place, you’re ready to launch your network & hand it over t
 
 ### 🚀 Step 1: Distribute the Client to Operators
 
-Once your AVS logic is packaged:
+Once your SSN logic is packaged:
 
 - Share the **Docker image** and the accompanying **`config.yaml`** file with your operators.
 - Operators run the SSN client using this image + config.
