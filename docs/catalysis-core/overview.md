@@ -16,6 +16,8 @@ sidebar_position: 1
 
 It introduces a new primitive called **Shared Security Abstraction (SSA)** that separates application logic from the complexities of underlying restaking infrastructure. By standardizing interactions across protocols like EigenLayer, Symbiotic and SatLayer, **Catalysis Core** allows applications and networks to consume restaked security through a single, abstract interface.
 
+![3D Visualization](/img/3D.svg)
+
 ## Core Architecture Overview
 
 The **Catalysis Core** is built on three core components:

@@ -16,7 +16,7 @@ sidebar_position: 1
 
 **Catalysis Network is more than a single protocol**. It is a modular ecosystem where **Catalysis Core** supplies a standardized, cross-protocol security interface and specialized applications build on top.
 
-![3D Visualization](/img/3D.svg)
+![3D Visualization](/img/Catalysis-Network.svg)
 
 ### Key Highlights
 
