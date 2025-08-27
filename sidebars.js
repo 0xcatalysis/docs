@@ -16,7 +16,21 @@ const sidebars = {
   // Manual sidebar configuration
   tutorialSidebar: [
     'intro',
-    'faqs',
+    {
+      type: 'category',
+      label: 'Restakers',
+      items: ['restakers/overview', 'restakers/faqs'],
+    },
+    {
+      type: 'category',
+      label: 'Coverage Clients',
+      items: ['coverage-clients/overview', 'coverage-clients/faqs'],
+    },
+    {
+      type: 'category',
+      label: 'CoverPool Curators',
+      items: ['coverpool-curators/overview', 'coverpool-curators/faqs'],
+    },
     {
       type: 'category',
       label: 'Catalysis Core',
@@ -44,6 +58,7 @@ const sidebars = {
       label: 'Resources',
       items: ['resources/references'],
     },
+    'faqs',
   ],
 };
 
