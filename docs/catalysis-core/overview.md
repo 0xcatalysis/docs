@@ -8,15 +8,15 @@ sidebar_position: 1
 
 <div style={{textAlign: 'center'}}>
 
-![Core Logo](./images/Core.svg)
-
 </div>
 
 **Catalysis Core** is the first Security Abstraction Layer that unlocks **Unified Access to $20B+ ETH, BTC & SOL-backed Economic Security** across major restaking protocols on Ethereum, Bitcoin & Solana.
 
+![3D Visualization](/img/3D.svg)
+
 It introduces a new primitive called **Shared Security Abstraction (SSA)** that separates application logic from the complexities of underlying restaking infrastructure. By standardizing interactions across protocols like EigenLayer, Symbiotic and SatLayer, **Catalysis Core** allows applications and networks to consume restaked security through a single, abstract interface.
 
-![3D Visualization](/img/3D.svg)
+![3D Visualization](/img/Catalysis-Network.svg)
 
 ## Core Architecture Overview
 
