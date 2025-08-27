@@ -16,6 +16,7 @@ const sidebars = {
   // Manual sidebar configuration
   tutorialSidebar: [
     'intro',
+    'faqs',
     {
       type: 'category',
       label: 'Catalysis Core',
