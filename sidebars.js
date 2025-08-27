@@ -41,11 +41,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Catalysis Coverage',
-      items: ['catalysis-coverage/overview'],
-    },
-    {
-      type: 'category',
       label: 'Resources',
       items: ['resources/references'],
     },
