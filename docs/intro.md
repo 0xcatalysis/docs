@@ -27,15 +27,15 @@ It is powered by Catalysis Core that provides unified access to **$20B+ of ETH, 
 
 ![Catalysis Logo](/img/Coverpool-simplified.svg)
 
-Catalysis Coverage connects three moving parts into a single flow.
+Catalysis connects multiple moving parts into a single flow.
 
-Restakers are the starting point. They deposit digital assets like ETH, BTC, SOL and other assets into restaking protocols like EigenLayer, Symbiotic and Babylon. **Catalysis Core** aggregates that capital & the pooled collateral then forms the raw “capacity” for underwriting risk.
+1. Restakers are the starting point. They deposit digital assets like ETH, BTC, SOL and other assets into restaking protocols like EigenLayer, Symbiotic and Babylon. **Catalysis Core** aggregates that capital & the pooled collateral then forms the raw “capacity” for underwriting risk.
 
-Next, **specialist risk curators** launch dedicated coverage vaults called **CoverPools**. These pools draw capacity from Catalysis Core and are designed to underwrite specific types of risk. Each CoverPool can issue multiple policies, tailored to different verticals or institutional needs.
+2. Next, **specialist risk curators** launch dedicated coverage vaults called **CoverPools**. These pools draw capacity from Catalysis Core and are designed to underwrite specific types of risk. Each CoverPool can issue multiple policies, tailored to different verticals or institutional needs.
 
-Once restakers delegate capacity to a CoverPool, that pool can issue onchain policies to reputed institutional clients such as trading desks, market makers & prime brokerage firms.
+3. Once restakers delegate capacity to a CoverPool, that pool can issue onchain policies to reputed institutional clients such as trading desks, market makers & prime brokerage firms.
 
-Premiums flow into the CoverPool and are automatically distributed back to restakers. In the event of a claim, restaked capital is slashed via Catalysis Core and used to cover losses.
+4. Premiums flow into the CoverPool and are automatically distributed back to restakers. In the event of a claim, restaked capital is slashed via Catalysis Core and used to provide cover.
 
 
 ## Next Steps
