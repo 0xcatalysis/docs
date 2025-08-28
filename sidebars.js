@@ -60,11 +60,7 @@ const sidebars = {
         },
       ],
     },
-    {
-      type: 'category',
-      label: 'Resources',
-      items: ['resources/references'],
-    },
+    'resources',
     'faqs',
   ],
 };
