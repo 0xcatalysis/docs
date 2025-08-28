@@ -27,7 +27,8 @@ function FeaturePills() {
     "HIP-3 Markets",
     "JIT Liquidity",
     "Treasury Protection",
-    "Real World Risks"
+    "Real World Risks",
+    "Instant Withdrawals",
   ];
 
   return (
