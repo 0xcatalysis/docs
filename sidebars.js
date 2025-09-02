@@ -23,8 +23,8 @@ const sidebars = {
         'stakeholders/overview',
         {
           type: 'category',
-          label: 'Restakers',
-          items: ['stakeholders/restakers/overview', 'stakeholders/restakers/faqs'],
+          label: 'Delegators',
+          items: ['stakeholders/delegators/overview', 'stakeholders/delegators/faqs'],
         },
         {
           type: 'category',
