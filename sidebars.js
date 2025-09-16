@@ -16,22 +16,15 @@ const sidebars = {
   // Manual sidebar configuration
   tutorialSidebar: [
     'intro',
+    'coverpools',
     {
       type: 'category',
       label: 'Stakeholders',
       items: [
         'stakeholders/overview',
         'stakeholders/delegators',
-        {
-          type: 'category',
-          label: 'Coverage Clients',
-          items: ['stakeholders/coverage-clients/overview', 'stakeholders/coverage-clients/faqs'],
-        },
-        {
-          type: 'category',
-          label: 'CoverPool Curators',
-          items: ['stakeholders/coverpool-curators/overview', 'stakeholders/coverpool-curators/faqs'],
-        },
+        'stakeholders/coverage-clients',
+        'stakeholders/coverpool-curators',
       ],
     },
     {

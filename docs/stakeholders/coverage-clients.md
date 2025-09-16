@@ -1,20 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Coverage Clients Overview
+# Coverage Clients
 
-This section provides comprehensive information for institutional clients seeking coverage through the Catalysis Network.
-
-## Who are Coverage Clients?
-
-Coverage clients are institutional entities that purchase onchain coverage policies to protect against specific risks. These include:
-
-- **Trading Desks**: Protecting against counterparty and operational risks
-- **Market Makers**: Coverage for inventory and settlement risks
-- **Prime Brokerage Firms**: Institutional client protection
-- **DeFi Protocols**: Coverage for smart contract and operational risks
-- **Lending Platforms**: Protection against borrower defaults and liquidity risks
+Coverage clients are institutional entities that purchase onchain coverage policies to protect against specific risks. These include institutions like Trading Desks, Market Makers, Prime Brokerage Firms and DeFi protocols like Lending Platforms, Stablecoins & Vault Infrastructure.
 
 ## Benefits of Catalysis Coverage
 
