@@ -19,20 +19,16 @@ function StripedBackground() {
 
 function FeaturePills() {
   const features = [
-    "On-chain insurance",
-    "Oracles",
-    "Slashing Protection",
-    "Prediction Markets",
-    "Under-collateralized Lending",
-    "AI Inference Engines",
-    "Modular Stablecoins",
-    "RWA Financing",
-    "Intents Solvers",
-    "Decentralized Prime Brokerages",
-    "Risk Tranching",
-    "Token Launch Custody",
-    "Guaranteed Flash Loans",
-    "ZK Co-Processors",
+    "Lending Markets",
+    "Stablecoins",
+    "RWA Tokenization",
+    "Onchain Credit",
+    "Vault Infra",
+    "HIP-3 Markets",
+    "JIT Liquidity",
+    "Treasury Protection",
+    "Real World Risks",
+    "Instant Withdrawals",
   ];
 
   return (
@@ -58,29 +54,15 @@ function HomepageHeader() {
             Catalysis Network Documentation
           </Heading>
           <p className="hero-subtitle">
-          Unlocking Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security.
+          Programmable Onchain Risk Coverage Infrastructure for Institutional DeFi.
           </p>
-                    <div className="hero-buttons">
+          <div className="hero-buttons">
            <Link
               className="start-building-button"
               to="/docs/intro"
             >
-              Introduction to Catalysis Network
+              Introduction to Catalysis
             </Link>
-            <div className="hero-buttons-row">
-              <Link
-                className="start-building-button"
-                to="/docs/catalysis-core/overview"
-              >
-                Catalysis Core
-              </Link>
-              <Link
-                className="start-building-button"
-                to="/docs/catalysis-coverage/overview"
-              >
-                Catalysis Coverage
-              </Link>
-            </div>
           </div>
           <FeaturePills />
         </div>
@@ -93,7 +75,7 @@ export default function Home() {
   return (
     <Layout
       title="Catalysis"
-      description="Unified Access to $20B+ of ETH, BTC & SOL-backed Economic Security."
+      description="Programmable Onchain Risk Coverage Infrastructure for Institutional DeFi"
     >
       <HomepageHeader />
       {/* <main className="home-main">

@@ -10,29 +10,36 @@ sidebar_position: 1
 
 </div>
 
-## What is Catalysis Network?
+## What is Catalysis?
 
-**Catalysis Network is a modular ecosystem** that enables purpose-built financial applications to leverage $20B+ of aggregated restaked collateral to **unlock new capital-efficient markets**.
+Catalysis is the first **Onchain Risk Coverage Infrastructure** purpose-built for **Institutional DeFi**. It turns restaked capital into **programmable protection** for **lending markets, stablecoins and structured yield products**.
 
-**Catalysis Network is more than a single protocol**. It is a modular ecosystem where **Catalysis Core** supplies a standardized, cross-protocol security interface and specialized applications build on top.
-
-![3D Visualization](/img/Catalysis-Network.svg)
+It is powered by Catalysis Core that provides unified access to **$20B+ of ETH, BTC & SOL-backed economic security**.
 
 ### Key Highlights
 
-1. **Cross‑Chain by Design**: Aggregates restaked capital from Ethereum, Bitcoin & Solana in a single abstract interface.
-2. **Capital Efficiency**: Recycles idle restaked assets into productive collateral while preserving native staking yields.
-3. **Institution‑Ready**: Built with transparent slashing logic, risk‑pricing frameworks and compliance‑friendly primitives.
+1. **Programmable, Fully Onchain:** Smart contracts handle dynamic real-time premium pricing, automated underwriting, onchain claims assessment and fast payouts.
+2. **Institution-First Design:** Purpose-built for institutions, with legal enforceability and compliance-ready contracts.
+3. **$20B+ Underwriting Capacity:** A deep pool of restaked digital assets (BTC, ETH, SOL) backs every policy, unlocking massive cover sizes for institutional-DeFi. 
+4. **Simplified Integration UX:** Coverage can be plugged into any protocol with minimal effort, no custom infra needed.
 
-## Ecosystem Components
+## Simplified Architecture
 
-- **Catalysis Core**  
-  The foundational layer that abstracts restaking integrations and exposes **unified staking, slashing and reward primitives**.
-- **Catalysis Coverage**  
-  A risk-coverage protocol that uses Core’s aggregate restaked collateral to **underwrite credit protection, stablecoins and structured yield products**.
-- **Future applications**  
-  **Stablecoins, DeFi liquidity layers, RWA markets** and other protocols can plug into Core to leverage shared security without re-implementing restaking logic.
+![Catalysis Logo](/img/coverage-arch-simplified.svg)
 
-By removing integration overhead, Catalysis gives developers a **single interface** to launch next-generation protocols that inherit deep economic security — **no direct restaking engineering required**.
+Catalysis connects multiple moving parts into a single flow.
+
+1. Restakers are the starting point. They deposit digital assets like ETH, BTC, SOL and other assets into restaking protocols like EigenLayer, Symbiotic and Babylon. **Catalysis Core** aggregates that capital & the pooled collateral then forms the raw “capacity” for underwriting risk.
+
+2. Next, **specialist risk curators** launch dedicated coverage vaults called **CoverPools**. These pools draw capacity from Catalysis Core and are designed to underwrite specific types of risk. Each CoverPool can issue multiple policies, tailored to different verticals or institutional needs.
+
+3. Once restakers delegate capacity to a CoverPool, that pool can issue onchain policies to reputed institutional clients such as trading desks, market makers & prime brokerage firms.
+
+4. Premiums flow into the CoverPool and are automatically distributed back to restakers. In the event of a claim, restaked capital is slashed via Catalysis Core and used to provide cover.
+
+
+## Next Steps
+
+For answers to common questions, check out our [FAQ page](./faqs.md).
 
 Get started by exploring the [Catalysis Core](./catalysis-core/overview.md) to understand the foundational architecture.

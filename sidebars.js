@@ -16,6 +16,17 @@ const sidebars = {
   // Manual sidebar configuration
   tutorialSidebar: [
     'intro',
+    'coverpools',
+    {
+      type: 'category',
+      label: 'Stakeholders',
+      items: [
+        'stakeholders/overview',
+        'stakeholders/delegators',
+        'stakeholders/coverage-clients',
+        'stakeholders/coverpool-curators',
+      ],
+    },
     {
       type: 'category',
       label: 'Catalysis Core',
@@ -38,16 +49,8 @@ const sidebars = {
         },
       ],
     },
-    {
-      type: 'category',
-      label: 'Catalysis Coverage',
-      items: ['catalysis-coverage/overview'],
-    },
-    {
-      type: 'category',
-      label: 'Resources',
-      items: ['resources/references'],
-    },
+    'resources',
+    'faqs',
   ],
 };
 
