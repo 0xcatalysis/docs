@@ -21,11 +21,7 @@ const sidebars = {
       label: 'Stakeholders',
       items: [
         'stakeholders/overview',
-        {
-          type: 'category',
-          label: 'Delegators',
-          items: ['stakeholders/delegators/overview', 'stakeholders/delegators/faqs'],
-        },
+        'stakeholders/delegators',
         {
           type: 'category',
           label: 'Coverage Clients',
