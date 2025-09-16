@@ -2,7 +2,7 @@
 
 The Catalysis Network ecosystem consists of several key stakeholders, each playing a crucial role in maintaining security, providing coverage, and ensuring the network's decentralized operation.
 
-# Key Stakeholders
+## Key Stakeholders
 
 | **#** | **Stakeholder** | **Description** |
 | --- | --- | --- |
@@ -12,6 +12,10 @@ The Catalysis Network ecosystem consists of several key stakeholders, each playi
 | **4** | **Catalysis** | - Smart-contract infrastructure that orchestrates the marketplace<br/>- In the event of a payout, it routes restaker capital into cover pools and facilitates payout liquidity<br/>- Automates premium collection, claims distribution and reward accounting<br/>- Hosts claims-processing framework & optional legal guarantor / SPV wrappers |
 | **5** | **Coverage Client** (Institutions, DeFi Protocols) | - Entity purchasing protection (e.g., credit borrower, custodian, RWA holder)<br/>- Pays premiums for defined loss cover<br/>- Might need to submit claims when trigger events occur<br/>- Become policy holders once policy is issued |
 
-# E2E Flow (Visualized)
+# E2E Flow Visualization
 
 ![E2E Flow](/img/flow-12.svg)
+
+## Sequence Diagram
+
+![E2E Flow](/img/sequence-diagram.svg)

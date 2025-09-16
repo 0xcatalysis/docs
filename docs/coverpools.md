@@ -10,7 +10,7 @@ sidebar_position: 2
 
 </div>
 
-# What is a CoverPool
+## What is a CoverPool
 
 A **CoverPool** is a specialized, risk-isolated coverage instance within Catalysis that holds committed delegations from restakers. It aggregates **slashable** delegations from restakers into a pool of **raw coverage capacity** that can be allocated to underwrite specific institutional & real-world risks.
 
@@ -24,7 +24,7 @@ Think of a **CoverPool** like a **syndicate at Lloyd’s of London**:
 - A coverage client can spread protection across **multiple CoverPools**, just as Lloyd’s policyholders often source cover from several syndicates.
 - This creates modular, diversified risk underwriting rather than relying on a single insurer.
 
-# Types of CoverPools
+## Types of CoverPools
 
 CoverPools can be categorized into two separate categories:
 
@@ -40,10 +40,10 @@ The core differences are highlighted below:
 | **Risk management** | Works with risk managers like Chaos Labs, LLamaRisk, Hypernative etc to monitor and manage risk parameters on a real-time basis | 3rd party provides its own risk monitoring & intelligence (may optionally integrate Catalysis analytics). |
 | **Service model** | **SLA for ongoing risk intelligence** | **Independent pool**; Catalysis provides onchain infrastructure + marketplace, not day-to-day operational or legal help |
 | **Parameter control** | **Catalysis** sets/updates parameters (with risk managers input & governance) | **3rd party** sets/updates parameters; Catalysis enforces via smart-contract rules only |
-| **Liability/exposure*** | Catalysis is the responsible underwriter for this pool type. Catalysis creates separate offshore underwriting entities for its coverpools | Catalysis **does not take lead or liability** for underwriting decisions; responsibility sits with the pool owner/operator |
 | **Examples** | Internal pools run by Catalysis core team | Sunereum, Native, Spice etc |
 
-# Catalysis Core
+
+## Catalysis Core
 
 CoverPools are backed by a technology called **Catalysis Core**.
 
