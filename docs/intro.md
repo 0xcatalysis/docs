@@ -25,7 +25,7 @@ It is powered by Catalysis Core that provides unified access to **$20B+ of ETH, 
 
 ## Simplified Architecture
 
-![Catalysis Logo](/img/Coverpool-simplified.svg)
+![Catalysis Logo](/img/coverage-arch-simplified.svg)
 
 Catalysis connects multiple moving parts into a single flow.
 
