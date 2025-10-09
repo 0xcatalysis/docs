@@ -2,6 +2,12 @@
 
 The following is a list of references that you can visit for more details about Catalysis Network and the broader restaking ecosystem.
 
+## Catalysis Coverage
+
+- Symbiotic Podcast: [Youtube](https://youtu.be/d4sPgNhVUeo?si=RpM5cZSsw0v7Qids)
+- Founder's Thoughts: [X Article](https://x.com/xenowits/status/1968673836317978741)
+- Coverage Announcement: [Blog](https://blog.catalysis.network/blog/catalysis-coverage-announcement)
+
 ## Research & Analysis
 
 ### Academic Research
@@ -32,7 +38,6 @@ The following is a list of references that you can visit for more details about 
 ### Restaking Analytics
 - [Restake watch](https://restake.watch/)
 - [U--1](https://u--1.com/)
-- [Inception LRT Dashboard](https://inceptionlrt.com/restaking-explorer)
 - [Dune Dashboard](https://dune.com/blocklytics/ethereum-restaking)
 
 ## Protocol Documentation
@@ -41,9 +46,5 @@ The following is a list of references that you can visit for more details about 
 - [Eigenlayer](https://docs.eigenlayer.xyz/)
 - [Symbiotic](https://docs.symbiotic.fi/)
 - [Babylon](https://docs.babylonchain.io/docs/introduction/overview)
-- [Satlayer](https://docs.satlayer.xyz/)
 - [Jito](https://www.jito.network/restaking/)
 
-## Official Catalysis Resources
-
-- [Catalysis Blog](https://blog.catalysis.network)
