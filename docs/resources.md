@@ -7,6 +7,7 @@ The following is a list of references that you can visit for more details about 
 - Symbiotic Podcast: [Youtube](https://youtu.be/d4sPgNhVUeo?si=RpM5cZSsw0v7Qids)
 - Founder's Thoughts: [X Article](https://x.com/xenowits/status/1968673836317978741)
 - Coverage Announcement: [Blog](https://blog.catalysis.network/blog/catalysis-coverage-announcement)
+- Tokensight Article: [Blog](https://paragraph.com/@tokensightxyz/catalysis-coverage)
 
 ## Research & Analysis
 
