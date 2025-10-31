@@ -2,9 +2,12 @@
 
 The following is a list of references that you can visit for more details about Catalysis Network and the broader restaking ecosystem.
 
-## Catalysis Coverage
+## Coverage
 
-- Symbiotic Podcast: [Youtube](https://youtu.be/d4sPgNhVUeo?si=RpM5cZSsw0v7Qids)
+- Podcasts
+  - [Symbiotic Blueprints](https://youtu.be/d4sPgNhVUeo?si=RpM5cZSsw0v7Qids)
+  - [Axal Talking Intentionally](https://x.com/getaxal/status/1981081439136285164)
+  - [Odyssey Podcast](https://www.youtube.com/watch?v=drEv-UeUmLQ)
 - Founder's Thoughts: [X Article](https://x.com/xenowits/status/1968673836317978741)
 - Coverage Announcement: [Blog](https://blog.catalysis.network/blog/catalysis-coverage-announcement)
 - Tokensight Article: [Blog](https://paragraph.com/@tokensightxyz/catalysis-coverage)
