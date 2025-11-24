@@ -17,6 +17,7 @@ The following is a list of references that you can visit for more details about 
 ### Academic Research
 - Mathematical Research (Accepted in [MARBLE 2025](https://www.marble-conference.org/marble2025)): [Economic Security of Multiple Shared Security Protocols](https://arxiv.org/abs/2505.03843)
 - How much security does your AVS _really_ need? - [Paper](https://arxiv.org/abs/2408.00928), [Youtube](https://www.youtube.com/watch?v=Cd89kupFgig)
+- Covered Lending Markets Research: [PDF](/covered-lending-markets.pdf)
 
 ### Industry Research
 - **Tokensight Research**
@@ -51,4 +52,3 @@ The following is a list of references that you can visit for more details about 
 - [Symbiotic](https://docs.symbiotic.fi/)
 - [Babylon](https://docs.babylonchain.io/docs/introduction/overview)
 - [Jito](https://www.jito.network/restaking/)
-
