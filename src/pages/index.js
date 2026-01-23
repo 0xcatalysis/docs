@@ -19,16 +19,12 @@ function StripedBackground() {
 
 function FeaturePills() {
   const features = [
-    "Lending Markets",
+    "DeFi Vaults",
     "Stablecoins",
-    "RWA Tokenization",
-    "Onchain Credit",
-    "Vault Infra",
-    "HIP-3 Markets",
-    "JIT Liquidity",
-    "Treasury Protection",
-    "Real World Risks",
-    "Instant Withdrawals",
+    "RWAfi",
+    "Vault Infrastructure",
+    "Morpho",
+    "Nest Credit",
   ];
 
   return (
@@ -51,10 +47,10 @@ function HomepageHeader() {
         </div>
         <div className="hero-right">
           <Heading as="h1" className="hero-title">
-            Catalysis Network Documentation
+            Catalysis<br />Documentation
           </Heading>
           <p className="hero-subtitle">
-          Programmable Onchain Risk Coverage Infrastructure for Institutional DeFi.
+          Infrastructure to Natively Integrate Risk Coverage into DeFi Vaults.
           </p>
           <div className="hero-buttons">
            <Link
@@ -75,7 +71,7 @@ export default function Home() {
   return (
     <Layout
       title="Catalysis"
-      description="Programmable Onchain Risk Coverage Infrastructure for Institutional DeFi"
+      description="Infrastructure to Natively Integrate Risk Coverage into DeFi Vaults."
     >
       <HomepageHeader />
       {/* <main className="home-main">
