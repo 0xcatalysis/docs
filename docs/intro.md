@@ -18,32 +18,42 @@ Catalysis is the **first onchain infrastructure** to **natively integrate covera
 
 ### Key Highlights
 
-<!-- 2. **Institution-First Design:** Purpose-built for institutions, with legal enforceability and compliance-ready contracts.
-3. **$20B+ Underwriting Capacity:** A deep pool of restaked digital assets (BTC, ETH, SOL) backs every policy, unlocking massive cover sizes for institutional-DeFi. 
-4. **Simplified Integration UX:** Coverage can be plugged into any protocol with minimal effort, no custom infra needed. -->
-
 1. **No third-party or custody risk**: Coverage integrates directly with premier vaults on existing **Tier-1 DeFi protocols** (Morpho, Upshift etc).
 2. **Competitive Pricing**: LPs access downside protection with minimal impact on net vault APY. Typically 25-75 bps, depending on **risk rating of the DeFi vault**.
 3. **Native Vault Coverage**: Institutional LPs don’t need to source or manage **external coverage from third-party protocols**.
 4. **Fully onchain and transparent**: Coverage terms and payouts are enforced by smart contracts and executed **without manual intervention** or **committee discretion**.
 5. **Simplified Integration UX:** Coverage can be plugged into any protocol with **minimal effort, no custom infra** needed.
 
-<!-- Instant Withdrawals: Covered LPs can withdraw at any time. In the event of a loss, they receive their full withdrawable amount up to the covered loss limit. -->
-
 ## Simplified Architecture
 
 ![Catalysis Logo](/img/coverage-arch.svg)
 
-Catalysis connects multiple moving parts into a single flow.
+Catalysis connects restaked capital, risk underwriting and DeFi vaults into a single, onchain coverage flow.
 
-1. Restakers are the starting point. They deposit digital assets like ETH, BTC, SOL and other assets into restaking protocols like EigenLayer and Symbiotic. **Catalysis Core** aggregates that capital & the pooled collateral then forms the raw “capacity” for **underwriting risk**.
+A. **Restakers provide underwriting capacity**
 
-2. Next, **specialist risk curators** launch dedicated coverage vaults called **CoverPools**. These pools draw capacity from Catalysis Core and are designed to underwrite specific types of risk. Each CoverPool can issue multiple policies, tailored to different verticals or institutional needs.
+Restakers deposit assets such as ETH, BTC and stablecoins into restaking protocols like EigenLayer and Symbiotic.
+**Catalysis Core** aggregates this restaked capital.
 
-3. Once restakers delegate capacity to a CoverPool, that pool can issue onchain policies to reputed institutional clients such as trading desks, market makers & prime brokerage firms.
+This pooled collateral represents the **system’s raw underwriting capacity** — capital that can be programmatically allocated to **cover risks on DeFi vaults**.
 
-4. Premiums flow into the CoverPool and are automatically distributed back to restakers. In the event of a claim, restaked capital is slashed via Catalysis Core and used to provide cover.
+B. **CoverPools express risk pricing**
 
+Catalysis deploys dedicated coverage vaults called **CoverPools**. CoverPools act as the operational layer where capital is committed to defined risk profiles.
+
+Each CoverPool sources capacity from Catalysis Core and is configured to underwrite a specific class of risk. For example: an **A-rated USDC lending vault** versus an **A+ WETH-denominated yield vault**, based on risk ratings and underwriting parameters.
+
+C. **CoverPools issue onchain coverage to DeFi vaults**
+
+Once restakers delegate capacity to a CoverPool, that pool can issue onchain coverage to **selected, high-quality DeFi vaults** on Tier-1 protocols such as **Morpho, Nest Credit and Upshift**.
+
+Coverage is **vault-specific, opt-in** and enforced entirely through smart contracts.
+
+D. **Premiums and claims are settled programmatically**
+
+Coverage premiums paid by covered vault depositors flow directly into the relevant CoverPool and are **automatically distributed to restakers**.
+
+If a predefined loss event occurs, **Catalysis Core enforces slashing** on the delegated restaked capital. The slashed funds are then routed to compensate depositors in the covered vault, **up to the covered loss amount**.
 
 ## Next Steps
 
