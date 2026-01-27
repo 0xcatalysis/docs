@@ -24,7 +24,6 @@ const sidebars = {
         'stakeholders/overview',
         'stakeholders/delegators',
         'stakeholders/coverage-clients',
-        'stakeholders/coverpool-curators',
       ],
     },
     {
