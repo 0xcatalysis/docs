@@ -1,21 +1,38 @@
 ---
-sidebar_position: 3
+title: DeFi Vaults
+sidebar_position: 4
 ---
 
-# DeFi Vault Protocols
+# DeFi Vaults
 
-Vault protocols are the integration surface where coverage is offered as a first-class primitive via opt-in Covered Vaults.
+DeFi vault protocols are where coverage becomes a product users can actually choose. They expose **Covered Vaults** (opt-in coverage) alongside **Base Vaults** (no coverage), so premiums and claims are handled within the vault lifecycle.
 
-## What vault protocols do
-- Host vault infrastructure where **Covered Vaults** sit alongside **Base Vaults**.
-- Define the vault-level integration surface for premiums, claims, and accounting.
-- Route vault interactions through adapter flows (e.g., deposit/withdraw).
+## Role in the network
+Vault protocols are the **integration surface** for users:
+- They host vaults that represent the underlying strategy/exposure.
+- They provide the onchain mechanics that make “covered vs base” a clear choice.
 
-## How coverage shows up to users
-- Users deposit into a **Covered Vault** to opt into protection.
-- Premiums are paid via the vault’s fee / APY haircut mechanics (implementation-specific).
-- Claims are credited back to the Covered Vault when a valid trigger occurs.
+## Base Vault vs Covered Vault
+- **Base Vault**: standard vault participation (no premiums, no coverage).
+- **Covered Vault**: vault participation plus embedded coverage.
+  - Premiums are paid via the Covered Vault’s accounting (implementation-specific).
+  - If a covered loss event occurs, claim value is credited back to the Covered Vault per coverage terms.
 
-## Why this matters
-- Avoids external coverage workflows.
-- Keeps protection, pricing, and payouts tightly coupled to vault risk.
+## What vault protocols provide
+- Vault primitives: deposits, withdrawals, accounting, shares, fees
+- A clean integration path for Catalysis adapters to:
+  - collect premiums,
+  - apply/reflect coverage costs, and
+  - credit claims back to the vault when triggered
+
+## What users experience
+- A familiar vault deposit flow
+- A clear tradeoff:
+  - **Covered Vault**: typically lower net yield (due to premiums) in exchange for protection
+  - **Base Vault**: higher net yield but no protection
+
+## Integration expectations (high level)
+Vault protocols integrating coverage should support:
+- Deterministic accounting so premiums and claims are reflected transparently
+- Clear separation between Base and Covered vault positions
+- Adapter hooks or interfaces needed to route premium/claim flows correctly

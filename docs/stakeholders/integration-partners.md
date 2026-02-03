@@ -1,19 +1,29 @@
 ---
-sidebar_position: 4
+title: Integration Partners
+sidebar_position: 5
 ---
 
 # Integration Partners
 
-Integration partners are distribution layers (frontends, aggregators, routers) that surface Covered Vaults to users and make participation seamless.
+Integration partners are frontends, aggregators, and routers that help users discover and access **Covered Vaults** through familiar experiences—without forcing an external “buy coverage” workflow.
+
+## Role in the network
+Integration partners are the **distribution layer**:
+- They surface covered opportunities where users already allocate capital.
+- They route deposits into Covered Vaults via standard UX flows.
 
 ## What integration partners do
-- Surface Covered Vaults to LPs via familiar UX (e.g., Superform, Jumper Earn).
-- Route deposits/withdrawals into Covered Vaults without an external coverage workflow.
-- Provide discovery, allocation, and user onboarding for covered vault opportunities.
+- **Discovery**: list and rank Covered Vaults alongside Base Vault options
+- **Routing**: send user deposits to the correct vault (Covered vs Base)
+- **UX abstraction**: make coverage feel like a vault attribute, not a separate product
 
-## Why they matter
-- Expand distribution and make covered vaults easy to access.
-- Preserve a single “vault deposit” flow while still enabling protection.
+## What they should display clearly
+To keep user expectations aligned, integrations should surface:
+- Whether a vault is **Covered** or **Base**
+- The **premium cost** (or net yield impact) in plain terms
+- The coverage scope at a high level (what’s covered / not covered)
+- Any limits or conditions that matter (e.g., max coverage, trigger conditions)
 
-## Typical integration
-- Frontend discovery → deposit routing → Covered Vault interaction → onchain accounting.
+## What they are NOT responsible for
+- Pricing risk or underwriting (handled by Catalysis + CoverPools)
+- Adjudicating claims (defined by coverage terms and executed by the system)

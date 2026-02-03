@@ -1,21 +1,46 @@
 ---
-sidebar_position: 1
+title: Delegators
+sidebar_position: 2
 ---
+
 # Delegators
 
-Delegators supply the capital that backs Catalysis CoverPools. In return, they earn underwriting fees (premiums) while bearing defined loss risk.
+Delegators supply the capital that backs Catalysis **CoverPools**. In return, they earn underwriting fees (premiums) while taking on a defined loss risk.
 
-## What Delegators do
-- Provide underwriting capacity by delegating restaked assets to Catalysis-aligned vaults / operators.
-- Earn yield + underwriting fees as long as no covered loss event triggers payouts.
-- Participate directly or via LRTs, curators, or restaking vault managers.
+## Role in the network
+Delegators are the **capacity providers** of the system:
+- Their capital is the source of underwriting capacity.
+- CoverPools use that capacity to offer protection to Covered Vaults.
 
-## What Delegators care about
-- **Risk**: What losses are covered, how payouts happen, and worst-case exposure.
-- **Return**: Premium rate, utilization, and reward accounting.
-- **Transparency**: Onchain accounting, claim criteria, and payout mechanics.
+## What delegators provide
+- **Restaked capital** (directly or via an LRT / curator) that is allocated to a CoverPool.
+- Optional delegation of underwriting preferences to a curator (where applicable).
 
-## How Delegators interact with Catalysis
-- Delegated restaked capital is structured into **CoverPools**.
-- CoverPools underwrite **Covered Vaults** and receive premium flows.
-- If a covered loss event occurs, CoverPools pay out according to the coverage contract.
+## How delegators earn
+Delegators generally earn a blend of:
+- **Restaking rewards** (from the underlying restaking layer), and
+- **Underwriting fees** (premiums paid by Covered Vault participants into CoverPools)
+
+Returns depend on:
+- CoverPool utilization (how much capacity is actively underwriting)
+- Premium rate(s)
+- Claims experience (whether payouts are triggered)
+
+## What delegators risk
+Delegators take on **loss exposure** defined by the coverage terms of the CoverPools they fund.
+If a covered event occurs:
+- CoverPools pay claims as specified, which can reduce delegator-backed capital.
+
+(Exact risk boundaries depend on the specific CoverPool and coverage definition.)
+
+## How delegators participate
+Common participation paths:
+- **Direct restaking** → allocate to a CoverPool
+- **Via an LRT** → LRT allocates/restakes on behalf of users
+- **Via a curator** → curator configures/allocates underwriting capacity
+
+## What to evaluate before allocating
+- What loss events are covered (and what is explicitly not covered)
+- Maximum payout / limits and how payouts are executed
+- Premium rate and expected utilization
+- Any timing constraints (e.g., allocation windows, withdrawal rules, cooldowns)

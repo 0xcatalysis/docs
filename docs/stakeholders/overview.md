@@ -6,6 +6,12 @@ Capital allocators supply **underwriting capacity** via restaking protocols, Cat
 
 **Integration partners** then distribute these **Covered Vaults** through familiar frontends, **making coverage accessible without adding a separate "external" workflow for users**.
 
+## Key terms
+- **CoverPool**: A risk-isolated underwriting pool funded by delegator capital. It receives premiums and pays claims when triggered.
+- **Base Vault**: Standard vault exposure (no coverage).
+- **Covered Vault**: Vault exposure with an embedded coverage mechanism (premiums + claim crediting handled at the vault layer).
+- **Adapter**: Integration module that connects Catalysis coverage logic to a specific vault protocol implementation.
+
 ## Key Stakeholders
 
 | **#** | **Stakeholder** | **Description** |
