@@ -18,4 +18,6 @@ Capital allocators supply **underwriting capacity** via restaking protocols, Cat
 
 # Visualization
 
-![E2E Flow](/img/e2e-distribution.png)
+<div style={{textAlign: 'center'}}>
+  <img src="/img/e2e-distribution.png" alt="E2E Flow" style={{maxWidth: '800px', width: '100%'}} />
+</div>

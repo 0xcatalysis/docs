@@ -1,19 +1,21 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
-
 # Delegators
 
-Delegators are entities that delegate slashable restaked capital to CoverPools and act as capacity providers for onchain risk coverage.
+Delegators supply the capital that backs Catalysis CoverPools. In return, they earn underwriting fees (premiums) while bearing defined loss risk.
 
-They are primarily individual restakers, liquid restaking protocols (LRTs) & restaking vault curators across restaking protocols (Eigenlayer, Symbiotic etc).
+## What Delegators do
+- Provide underwriting capacity by delegating restaked assets to Catalysis-aligned vaults / operators.
+- Earn yield + underwriting fees as long as no covered loss event triggers payouts.
+- Participate directly or via LRTs, curators, or restaking vault managers.
 
-## Key Roles
+## What Delegators care about
+- **Risk**: What losses are covered, how payouts happen, and worst-case exposure.
+- **Return**: Premium rate, utilization, and reward accounting.
+- **Transparency**: Onchain accounting, claim criteria, and payout mechanics.
 
-- Restakers act as Capacity Providers: They supply restaked assets that back CoverPools.
-- Earns yield + underwriting fees in exchange for bearing loss risk.
-- May act directly or via LRTs or DeFi risk curators.
-
-## Visualization
-
-![Catalysis Logo](/img/stakeholders-delegators.svg)
+## How Delegators interact with Catalysis
+- Delegated restaked capital is structured into **CoverPools**.
+- CoverPools underwrite **Covered Vaults** and receive premium flows.
+- If a covered loss event occurs, CoverPools pay out according to the coverage contract.
