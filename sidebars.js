@@ -23,8 +23,9 @@ const sidebars = {
       items: [
         'stakeholders/overview',
         'stakeholders/delegators',
-        'stakeholders/coverage-clients',
-        'stakeholders/coverpool-curators',
+        'stakeholders/restaking-protocols',
+        'stakeholders/defi-protocols',
+        'stakeholders/integration-partners',
       ],
     },
     {

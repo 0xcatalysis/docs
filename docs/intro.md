@@ -26,7 +26,7 @@ Catalysis is the **first onchain infrastructure** to **natively integrate covera
 
 ## Simplified Architecture
 
-![Catalysis Logo](/img/coverage-arch.svg)
+![Catalysis Logo](/img/coverage-arch-new.svg)
 
 Catalysis connects restaked capital, risk underwriting and DeFi vaults into a single, onchain coverage flow.
 
