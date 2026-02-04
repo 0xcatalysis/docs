@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Delegators supply the capital that backs Catalysis **CoverPools**. In return, they earn **coverage fees (premiums)** while taking on well-defined loss risks.
 
-Delegators are the **capacity providers** of the system:
+They are the **capacity providers** of the system:
 - Their capital is the source of underwriting capacity.
 - CoverPools use that capacity to offer protection to **Covered Vaults**.
 
@@ -21,9 +21,9 @@ Catalysis is designed to **minimize tail risk** for restakers through **strict v
 
 ## How delegators earn
 
-Delegators earn a blend of:
+Delegators generally earn a blend of:
 1. **Coverage fees**: Premiums paid by Covered Vault participants (**Base APY**)
-2. **Restaking rewards**: Incentives from the underlying restaking layer (say Eigen)
+2. **Restaking rewards**: Incentives from the underlying restaking layer (say EigenLayer)
 3. **Catalysis incentives**: Protocol incentives (wherever applicable)
 
 ## FAQs

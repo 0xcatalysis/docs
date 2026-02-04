@@ -7,8 +7,7 @@ sidebar_position: 4
 
 DeFi vault protocols are where coverage becomes a product users can actually choose. They expose **Covered Vaults** (opt-in coverage) alongside **Base Vaults** (no coverage), so premiums and claims are handled within the vault lifecycle.
 
-## Role in the network
-Vault protocols are the **integration surface** for users:
+Vault protocols like Morpho are the **integration surface** for users:
 - They host vaults that represent the underlying strategy/exposure.
 - They provide the onchain mechanics that make “covered vs base” a clear choice.
 
@@ -24,15 +23,3 @@ Vault protocols are the **integration surface** for users:
   - collect premiums,
   - apply/reflect coverage costs, and
   - credit claims back to the vault when triggered
-
-## What users experience
-- A familiar vault deposit flow
-- A clear tradeoff:
-  - **Covered Vault**: typically lower net yield (due to premiums) in exchange for protection
-  - **Base Vault**: higher net yield but no protection
-
-## Integration expectations (high level)
-Vault protocols integrating coverage should support:
-- Deterministic accounting so premiums and claims are reflected transparently
-- Clear separation between Base and Covered vault positions
-- Adapter hooks or interfaces needed to route premium/claim flows correctly

@@ -7,7 +7,7 @@ sidebar_position: 5
 
 Integration partners are **frontends, aggregators and earn platforms** that help users discover and access **Covered Vaults** through familiar experiences — without forcing an external “buy coverage” workflow.
 
-Integration partners are the **distribution layer** for Catalysis:
+They are the **distribution layer** for Catalysis:
 - They surface covered opportunities where users already allocate capital.
 - They route deposits into Covered Vaults via standard UX flows and secure vault integrations.
 
