@@ -12,6 +12,13 @@ They act as the **coordination layer** between delegators and Catalysis:
 - They enforce protocol-defined rules for **reward distribution** and **slashing**, which Catalysis can use as **enforcement primitives for underwriting**.
 - They provide the **delegation primitives** that let capital be allocated toward different underwriting configurations (e.g., **CoverPools**).
 
+# Visualization
+
+<div style={{textAlign: 'center'}}>
+  <img src="/img/coverpool-restaking.png" alt="E2E Flow" style={{maxWidth: '800px', width: '100%'}} />
+</div>
+---
+
 ## FAQs
 
 ### **Q1. Which restaking protocols does Catalysis support today?**
