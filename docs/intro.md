@@ -26,30 +26,34 @@ Catalysis is the **first onchain infrastructure** to **natively integrate covera
 
 ## Simplified Architecture
 
-![Catalysis Logo](/img/coverage-arch-new.svg)
+<div style={{textAlign: 'center'}}>
+  <img src="/img/architecture.png" alt="E2E Flow" style={{maxWidth: '1000px', width: '100%'}} />
+</div>
+
+## How It Works
 
 Catalysis connects restaked capital, risk underwriting and DeFi vaults into a single, onchain coverage flow.
 
-A. **Restakers provide underwriting capacity**
+#### 1. **Restakers provide underwriting capacity**
 
 Restakers deposit assets such as ETH, BTC and stablecoins into restaking protocols like EigenLayer and Symbiotic.
 **Catalysis Core** aggregates this restaked capital.
 
 This pooled collateral represents the **system’s raw underwriting capacity** — capital that can be programmatically allocated to **cover risks on DeFi vaults**.
 
-B. **CoverPools express risk pricing**
+#### 2. **CoverPools express risk pricing**
 
 Catalysis deploys dedicated coverage vaults called **CoverPools**. CoverPools act as the operational layer where capital is committed to defined risk profiles.
 
 Each CoverPool sources capacity from Catalysis Core and is configured to underwrite a specific class of risk. For example: an **A-rated USDC lending vault** versus an **A+ WETH-denominated yield vault**, based on risk ratings and underwriting parameters.
 
-C. **CoverPools issue onchain coverage to DeFi vaults**
+#### 3. **CoverPools issue onchain coverage to DeFi vaults**
 
 Once restakers delegate capacity to a CoverPool, that pool can issue onchain coverage to **selected, high-quality DeFi vaults** on Tier-1 protocols such as **Morpho, Nest Credit and Upshift**.
 
 Coverage is **vault-specific, opt-in** and enforced entirely through smart contracts.
 
-D. **Premiums and claims are settled programmatically**
+#### 4. **Premiums and claims are settled programmatically**
 
 Coverage premiums paid by covered vault depositors flow directly into the relevant CoverPool and are **automatically distributed to restakers**.
 
@@ -57,6 +61,6 @@ If a predefined loss event occurs, **Catalysis Core enforces slashing** on the d
 
 ## Next Steps
 
-For answers to common questions, check out our [FAQ page](./faqs.md).
+To learn about the stakeholders in Catalysis, check out the [Stakeholders overview](./stakeholders/overview.md).
 
 Get started by exploring the [Catalysis Core](./catalysis-core/overview.md) to understand the foundational architecture.
