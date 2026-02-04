@@ -1,23 +1,26 @@
 # Resources
 
-The following is a list of references that you can visit for more details about Catalysis Network and the broader restaking ecosystem.
+The following is a list of references that you can visit for more details about Catalysis Network and the broader risk coverage ecosystem.
 
 ## Coverage
 
-- Podcasts
+- **Podcasts**
   - [Symbiotic Blueprints](https://youtu.be/d4sPgNhVUeo?si=RpM5cZSsw0v7Qids)
   - [Axal Talking Intentionally](https://x.com/getaxal/status/1981081439136285164)
   - [Odyssey Podcast](https://www.youtube.com/watch?v=drEv-UeUmLQ)
-- Founder's Thoughts: [X Article](https://x.com/xenowits/status/1968673836317978741)
-- Coverage Announcement: [Blog](https://blog.catalysis.network/blog/catalysis-coverage-announcement)
-- Tokensight Article: [Blog](https://paragraph.com/@tokensightxyz/catalysis-coverage)
+- **Founder's Thoughts**: [X Article](https://x.com/xenowits/status/1968673836317978741)
+- **Coverage Announcement**: [Blog](https://blog.catalysis.network/blog/catalysis-coverage-announcement)
+- **Tokensight Article**: [Blog](https://paragraph.com/@tokensightxyz/catalysis-coverage)
+- **3-piece Blog Series**:
+  1. [**DeFi and Capital: What the Last Decade Taught Us**](https://x.com/0xcatalysis/status/2014349312801821093)
+  2. [**Why DeFi Vaults Haven’t Reached Institutional Scale**](https://x.com/0xcatalysis/status/2018685246225674728)
+  3. Coming soon.
 
 ## Research & Analysis
 
 ### Academic Research
 - Mathematical Research (Accepted in [MARBLE 2025](https://www.marble-conference.org/marble2025)): [Economic Security of Multiple Shared Security Protocols](https://arxiv.org/abs/2505.03843)
 - How much security does your AVS _really_ need? - [Paper](https://arxiv.org/abs/2408.00928), [Youtube](https://www.youtube.com/watch?v=Cd89kupFgig)
-- Economic Analysis of Covered Lending Markets: [Research PDF](covered-lending-markets.pdf)
 
 ### Industry Research
 - **Tokensight Research**
@@ -38,17 +41,7 @@ The following is a list of references that you can visit for more details about 
 - [Node Operator problems](https://youtu.be/pmozNGACsGc?si=4-1UNgvlBTswqaM8&t=805)
 - [ZK is insufficient: Sreeram's SBC Talk](https://www.youtube.com/watch?v=YSuG2kXjLNA)
 
-## Tools & Dashboards
-
 ### Restaking Analytics
 - [Restake watch](https://restake.watch/)
 - [U--1](https://u--1.com/)
 - [Dune Dashboard](https://dune.com/blocklytics/ethereum-restaking)
-
-## Protocol Documentation
-
-### Major Restaking Protocols
-- [Eigenlayer](https://docs.eigenlayer.xyz/)
-- [Symbiotic](https://docs.symbiotic.fi/)
-- [Babylon](https://docs.babylonchain.io/docs/introduction/overview)
-- [Jito](https://www.jito.network/restaking/)

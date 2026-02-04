@@ -26,7 +26,7 @@ They act as the **coordination layer** between delegators and Catalysis:
 Support is implemented via protocol-specific integrations and can expand to additional **restaking and liquidity layers** over time.
 
 ### **Q2. Does the restaking protocol take a cut of rewards?**
-It depends on the restaking layer (and sometimes the LRT/curator you use). Some protocols apply **protocol-defined fees or reward splits** on AVS reward flows (e.g: **[EigenLayer charges 20% fees](https://x.com/eigencloud/status/2016386803062997049?s=20)**).
+It depends on the restaking layer (and sometimes the LRT / curator you use). Some protocols apply **protocol-defined fees or reward splits** on AVS reward flows (e.g: **[EigenLayer charges 20% fees](https://x.com/eigencloud/status/2016386803062997049?s=20)**).
 
 **Catalysis does not control these fees** — partners should refer to the restaking protocol’s latest fee model.
 
