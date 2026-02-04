@@ -20,7 +20,8 @@ Capital allocators supply **underwriting capacity** via restaking protocols, Cat
 | **2** | **Restaking Protocol (EigenLayer)** | - **Custodies and tracks restaked collateral**; enforces slashing / reward distribution<br/>- Serves as the **coordination layer** between Catalysis and restakers |
 | **3** | **Catalysis** | - Smart-contract-based **risk coverage infrastructure** that creates and manages **CoverPools**<br/>- **Calculates risk premiums** and provides **vault-native integration** via custom adapters (e.g., Morpho Adapter) |
 | **4** | **DeFi Protocols (Vault-Based)** | - Vault infrastructure where **coverage is embedded as an opt-in** **Covered Vault** alongside a **Base Vault** (e.g., Morpho)<br/>- Defines the **vault-level integration surface** for premiums, claims and accounting via adapters |
-| **5** | **Integration Partners (Distribution)** | - **Frontends and aggregators that surface Covered Vaults to LPs** and route deposits (e.g., **Superform, Jumper Earn**)<br/>- Distribute covered vault opportunities to users without requiring an **external “coverage workflow”** |
+| **5** | **Integration Partners (Distribution)** | - **Frontends and aggregators that surface Covered Vaults to depositors** and route deposits (e.g., **Superform, Jumper Earn**)<br/>- Distribute covered vault opportunities to users without requiring an **external “coverage workflow”** |
+| **6** | **Covered Vault Depositors (End Users)** | - **Institutions and retail** that opt into coverage via an integration partner **(UI / earn platform)**<br/>- Deposit into **Covered Vaults** and pay premiums as a **net APY haircut** <br/>- Receive **downside protection** when covered loss triggers occur |
 
 # Visualization
 
