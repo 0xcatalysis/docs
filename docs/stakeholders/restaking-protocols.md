@@ -12,7 +12,7 @@ They act as the **coordination layer** between delegators and Catalysis:
 - They enforce protocol-defined rules for **reward distribution** and **slashing**, which Catalysis can use as **enforcement primitives for underwriting**.
 - They provide the **delegation primitives** that let capital be allocated toward different underwriting configurations (e.g., **CoverPools**).
 
-## FAQs 2
+## FAQs
 
 ### **Q1. Which restaking protocols does Catalysis support today?**
 **Currently:** **[EigenLayer](https://www.eigencloud.xyz/)** and **[Symbiotic](https://symbiotic.fi/)** (both on **Ethereum Mainnet**).  

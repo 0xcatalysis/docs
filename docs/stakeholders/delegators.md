@@ -19,10 +19,10 @@ Catalysis is designed to **minimize tail risk** for restakers through **strict v
 2. **Quantitative underwriting**: Vault eligibility and pricing are informed by our robust underwriting engine across **curator quality, protocol risk and asset profile**.
 3. **Capped loss scenarios**: Historical data indicates a **&lt;1% chance** of a qualifying vault triggering the maximum payout (e.g., 10% of TVL).
 
-## How delegators earn
+## How Delegators Earn
 
 Delegators generally earn a blend of:
-1. **Coverage fees**: Premiums paid by Covered Vault participants (**Base APY**)
+1. **Coverage fees (Base APY)**: Premiums paid by Covered Vault participants
 2. **Restaking rewards**: Incentives from the underlying restaking layer (say EigenLayer)
 3. **Catalysis incentives**: Protocol incentives (wherever applicable)
 
