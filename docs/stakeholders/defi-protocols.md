@@ -14,6 +14,7 @@ Vault protocols like Morpho are the **integration surface** for users. They host
 <div style={{textAlign: 'center'}}>
   <img src="/img/base-vs-covered.png" alt="E2E Flow" style={{maxWidth: '800px', width: '100%'}} />
 </div>
+---
 
 1. **Base Vault (Unchanged)**:
 **The original vault remains fully intact** — same strategy, same TVL, same APY. No coverage logic, capital or risk is imposed on existing LPs.
@@ -25,7 +26,7 @@ In exchange for coverage, LPs accept a **small APY haircut** and receive partial
 3. **CoverPool (Risk Capital Layer)**:
 **Each covered vault is paired with a dedicated CoverPool** funded by restaked capital. This pool acts as the onchain source of protection capital.
 
-## FAQs 2
+## FAQs
 
 ### **Q1. Where does a Covered Vault live — on the vault protocol or on Catalysis?**
 A Covered Vault lives on the **underlying DeFi vault protocol** (e.g., **[Morpho](https://morpho.org)** / **[Euler](https://euler.finance)**).
