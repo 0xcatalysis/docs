@@ -41,5 +41,3 @@ The difference is the **coverage layer**: premium payments and claim crediting a
 ### **Q3. What do users actually get when a claim happens?**
 When a covered trigger occurs, cover amount is **credited back to the Covered Vault** according to the coverage definition and limits. Users benefit through the vault’s normal accounting.
 
-### **Q4. Do Base Vault LPs subsidize coverage?**
-**NO**. Base Vault LPs remain unchanged. **Premiums are paid by Covered Vault LPs only** and payouts are funded by the paired CoverPool.

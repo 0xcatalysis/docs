@@ -51,7 +51,6 @@ const sidebars = {
       ],
     },
     'resources',
-    'faqs',
   ],
 };
 

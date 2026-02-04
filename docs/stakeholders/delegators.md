@@ -37,7 +37,7 @@ Delegators generally earn a blend of:
 Returns generally depend on:
 - **CoverPool utilization**: How much capacity is actively underwriting
 - **Premium rates**: Risk-calibrated pricing
-- **Claims frequency**: How often payout events trigger (typically low)
+- **Claims frequency**: How often payout events trigger (**highly unlikely**)
 
 ### **Q3. Can I withdraw or reallocate?**
 
