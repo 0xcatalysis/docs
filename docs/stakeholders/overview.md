@@ -23,7 +23,7 @@ Capital allocators supply **underwriting capacity** via restaking protocols, Cat
 | **5** | **Integration Partners (Distribution)** | - **Frontends and aggregators that surface Covered Vaults to depositors** and route deposits (e.g., **Superform, Jumper Earn**)<br/>- Distribute covered vault opportunities to users without requiring an **external “coverage workflow”** |
 | **6** | **Covered Vault Depositors (End Users)** | - **Institutions and retail** that opt into coverage via an integration partner **(UI / earn platform)**<br/>- Deposit into **Covered Vaults** and pay premiums as a **net APY haircut** <br/>- Receive **downside protection** when covered loss triggers occur |
 
-# Visualization
+## Visualization
 
 ***Note: This is an example illustration. Logos shown don't necessarily indicate active integrations or partnerships.***
 

@@ -11,20 +11,20 @@ They are the **distribution layer** for Catalysis:
 - They surface covered opportunities where users already allocate capital.
 - They route deposits into Covered Vaults via standard UX flows and secure vault integrations.
 
-# What Catalysis enables
+## What Catalysis enables
 1. **Native integration**: Coverage **integrates directly** with vaults on existing Tier-1 DeFi protocols (Morpho, Euler, Upshift etc).
 2. **Competitive Pricing**: Depositors access downside protection with minimal impact on net vault APY. **Typically 25–75 bps, depending on DeFi vault rating.¹**
 3. **Fully onchain and transparent**: Coverage terms and payouts are enforced by smart contracts and executed **without manual intervention or committee discretion**.
 4. **Opt-in coverage**: Platforms can offer coverage as an opt-in upgrade. Existing vaults and yields remain unchanged, **only users who want protection opt in**.
 
-# Visualization
+## Visualization
 
 <div style={{textAlign: 'center'}}>
   <img src="/img/distribution-morpho.png" alt="E2E Flow" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 ---
 
-# FAQs
+## FAQs
 
 ### Q1. What does the integration process look like for a distribution partner?
 Integration is straightforward:
