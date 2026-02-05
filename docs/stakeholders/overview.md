@@ -22,7 +22,7 @@ Capital allocators supply **underwriting capacity** via restaking protocols, Cat
 | **4** | **DeFi Protocols (Vault-Based)** | - Vault infrastructure where **coverage is embedded as an opt-in** **Covered Vault** alongside a **Base Vault** (e.g., Morpho)<br/>- Defines the **vault-level integration surface** for premiums, claims and accounting via adapters |
 | **5** | **Integration Partners (Distribution)** | - **Frontends and aggregators that surface Covered Vaults to LPs** and route deposits (e.g., **Superform, Jumper Earn**)<br/>- Distribute covered vault opportunities to users without requiring an **external “coverage workflow”** |
 
-# Visualization
+## Visualization
 
 ***Note: This is an example illustration. Logos shown don't necessarily indicate active integrations or partnerships.***
 
