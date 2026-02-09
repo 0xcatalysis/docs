@@ -27,7 +27,7 @@ Catalysis is the **first onchain infrastructure** to **natively integrate covera
 ## Simplified Architecture
 
 <div style={{textAlign: 'center'}}>
-  <img src="/img/architecture.png" alt="E2E Flow" style={{maxWidth: '1000px', width: '100%'}} />
+  <img src="/img/arch-e2e.svg" alt="E2E Flow" style={{width: '100%', border: '1px solid black'}} />
 </div>
 
 ## How It Works
