@@ -51,6 +51,7 @@ const sidebars = {
       ],
     },
     'resources',
+    'glossary',
   ],
 };
 
