@@ -16,7 +16,7 @@ CoverPools are isolated across both **underwriting logic** and **economic exposu
 
 ## What CoverPools do
 
-![Catalysis Logo](/img/E2E-Flow.svg)
+<img src="/img/E2E-Flow.svg" alt="Catalysis Logo" style={{width: '100%', border: '1px solid black'}} />
 
 1. **Connect**: Restakers (capacity providers) ↔ Vaults (e.g., [Morpho](https://morpho.org), [Euler](https://euler.finance)) in a single onchain flow
 2. **Aggregate**: Slashable delegations → usable coverage capacity
