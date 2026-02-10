@@ -4,6 +4,10 @@ The following is a list of references that you can visit for more details about 
 
 ## Coverage
 
+- **3-piece Blog Series**:
+  1. [**DeFi and Capital: What the Last Decade Taught Us**](https://x.com/0xcatalysis/status/2014349312801821093)
+  2. [**Why DeFi Vaults Haven’t Reached Institutional Scale**](https://x.com/0xcatalysis/status/2018685246225674728)
+  3. [**Vault-Native Risk Coverage: How Catalysis Completes Institutional DeFi**](https://x.com/0xcatalysis/status/2021236666925494321)
 - **Podcasts**
   - [Symbiotic Blueprints](https://youtu.be/d4sPgNhVUeo?si=RpM5cZSsw0v7Qids)
   - [Axal Talking Intentionally](https://x.com/getaxal/status/1981081439136285164)
@@ -11,10 +15,6 @@ The following is a list of references that you can visit for more details about 
 - **Founder's Thoughts**: [X Article](https://x.com/xenowits/status/1968673836317978741)
 - **Coverage Announcement**: [Blog](https://blog.catalysis.network/blog/catalysis-coverage-announcement)
 - **Tokensight Article**: [Blog](https://paragraph.com/@tokensightxyz/catalysis-coverage)
-- **3-piece Blog Series**:
-  1. [**DeFi and Capital: What the Last Decade Taught Us**](https://x.com/0xcatalysis/status/2014349312801821093)
-  2. [**Why DeFi Vaults Haven’t Reached Institutional Scale**](https://x.com/0xcatalysis/status/2018685246225674728)
-  3. Coming soon.
 
 ## Vaults
 
