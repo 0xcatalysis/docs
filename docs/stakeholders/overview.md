@@ -12,6 +12,12 @@ Capital allocators supply **underwriting capacity** via restaking protocols, Cat
 - **Covered Vault**: Vault exposure with an embedded coverage mechanism (premiums + claim crediting handled at the vault layer).
 - **Adapter**: Integration module that connects Catalysis coverage logic to a specific vault protocol implementation.
 
+## Visualization
+
+<div style={{textAlign: 'center'}}>
+  <img src="/img/full-picture.svg" alt="Full picture" style={{width: '100%', border: '1px solid black'}} />
+</div>
+
 ## Key Stakeholders
 
 | **#** | **Stakeholder** | **Description** |
@@ -22,11 +28,3 @@ Capital allocators supply **underwriting capacity** via restaking protocols, Cat
 | **4** | **DeFi Protocols (Vault-Based)** | - Vault infrastructure where **coverage is embedded as an opt-in** **Covered Vault** alongside a **Base Vault** (e.g., Morpho)<br/>- Defines the **vault-level integration surface** for premiums, claims and accounting via adapters |
 | **5** | **Integration Partners (Distribution)** | - **Frontends and aggregators that surface Covered Vaults to depositors** and route deposits (e.g., **Superform, Jumper Earn**)<br/>- Distribute covered vault opportunities to users without requiring an **external “coverage workflow”** |
 | **6** | **Covered Vault Depositors (End Users)** | - **Institutions and retail** that opt into coverage via an integration partner **(UI / earn platform)**<br/>- Deposit into **Covered Vaults** and pay premiums as a **net APY haircut** <br/>- Receive **downside protection** when covered loss triggers occur |
-
-## Visualization
-
-***Note: This is an example illustration. Logos shown don't necessarily indicate active integrations or partnerships.***
-
-<div style={{textAlign: 'center'}}>
-  <img src="/img/e2e-distribution.png" alt="E2E Flow" style={{maxWidth: '800px', width: '100%'}} />
-</div>

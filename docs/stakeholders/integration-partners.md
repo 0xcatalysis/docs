@@ -20,7 +20,7 @@ They are the **distribution layer** for Catalysis:
 ## Visualization
 
 <div style={{textAlign: 'center'}}>
-  <img src="/img/distribution-morpho.png" alt="E2E Flow" style={{maxWidth: '800px', width: '100%'}} />
+  <img src="/img/distribution-morpho.svg" alt="Integration Partners" style={{width: '100%', border: '1px solid black'}} />
 </div>
 ---
 

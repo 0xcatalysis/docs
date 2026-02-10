@@ -15,7 +15,7 @@ They act as the **coordination layer** between delegators and Catalysis:
 ## Visualization
 
 <div style={{textAlign: 'center'}}>
-  <img src="/img/coverpool-restaking.png" alt="E2E Flow" style={{maxWidth: '800px', width: '100%'}} />
+  <img src="/img/coverpool-restaking.svg" alt="Coverpool Restaking" style={{width: '100%', border: '1px solid black'}} />
 </div>
 ---
 
