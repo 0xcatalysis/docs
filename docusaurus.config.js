@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Catalysis Network",
-  tagline: "Unified Access to ETH, BTC & SOL-backed Economic Security",
+  tagline: "Onchain Infrastructure to Natively Integrate Coverage into DeFi Vaults.",
   favicon: "favicon.ico",
 
   // Set the production url of your site here
@@ -52,7 +52,46 @@ const config = {
   ],
 
   themes: ['@docusaurus/theme-mermaid'],
-  
+
+  plugins: [
+    [
+      'docusaurus-plugin-llms',
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        title: 'Catalysis Network',
+        description: 'Unified Access to ETH, BTC & SOL-backed Economic Security. Official documentation for the Catalysis network, cover pools, stakeholders, node operators, and integration guides.',
+        excludeImports: true,
+        removeDuplicateHeadings: true,
+        includeBlog: false,
+        includeOrder: [
+          'intro',
+          'coverpools',
+          'stakeholders/*',
+          'catalysis-core/overview',
+          'catalysis-core/network/*',
+          'catalysis-core/operators/*',
+          'catalysis-core/restaking-protocols/*',
+          'resources',
+          'glossary',
+        ],
+        includeUnmatchedLast: true,
+        rootContent: `This file contains links to all documentation sections following the llmstxt.org standard.
+
+For the complete documentation in a single file, use llms-full.txt.
+
+Documentation covers: introduction, cover pools, stakeholders (delegators, restaking protocols, DeFi protocols, integration partners), Catalysis Core (overview, network quickstart and SDK, contracts, integration, FAQs, node operators, restaking protocols), resources, and glossary.`,
+        fullRootContent: `Complete documentation bundle for Catalysis Network following the llmstxt.org standard.
+
+This file contains all documentation content in a single document for AI agents and LLMs. Use it for comprehensive context when answering questions about Catalysis.
+
+Sections: Introduction, Cover Pools, Stakeholders, Catalysis Core (Network, Node Operators, Restaking Protocols), Resources, Glossary.
+
+Site: https://docs.catalysis.network`,
+      },
+    ],
+  ],
+
   markdown: {
     mermaid: true,
   },
