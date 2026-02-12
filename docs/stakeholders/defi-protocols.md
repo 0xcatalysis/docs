@@ -12,7 +12,7 @@ Vault protocols like Morpho are the **integration surface** for users. They host
 ## Base Vault vs Covered Vault
 
 <div style={{textAlign: 'center'}}>
-  <img src="/img/4.svg" alt="Base vs Covered" style={{width: '100%', border: '1px solid black'}} />
+  <img src="/img/229.svg" alt="Base vs Covered" style={{width: '100%', border: '1px solid black'}} />
 </div>
 ---
 
