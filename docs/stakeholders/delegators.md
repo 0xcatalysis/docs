@@ -11,6 +11,12 @@ They are the **capacity providers** of the system:
 - Their capital is the source of underwriting capacity.
 - CoverPools use that capacity to offer protection to **Covered Vaults**.
 
+## Visualization
+
+<div style={{textAlign: 'center'}}>
+  <img src="/img/delegators.svg" alt="Delegators" style={{width: '98%', border: '1px solid black'}} />
+</div>
+
 ## Risk Design
 
 Catalysis is designed to **minimize tail risk** for restakers through **strict vault selection, disciplined underwriting and capped downside exposure**.
