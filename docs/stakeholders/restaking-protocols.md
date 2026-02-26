@@ -15,7 +15,7 @@ They act as the **coordination layer** between delegators and Catalysis:
 ## Visualization
 
 <div style={{textAlign: 'center'}}>
-  <img src="/img/coverpool-restaking.svg" alt="Coverpool Restaking" style={{width: '100%', border: '1px solid black'}} />
+  <img src="/img/restaking-protocols-1.svg" alt="Coverpool Restaking" style={{width: '100%', border: '1px solid black'}} />
 </div>
 ---
 
