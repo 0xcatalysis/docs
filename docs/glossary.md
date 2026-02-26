@@ -11,7 +11,7 @@ A **DeFi vault** is a smart contract that accepts user deposits and automaticall
 
 ### 2. Risk Coverage
 
-**Risk coverage** is onchain protection attached to a vault deposit that compensates users if pre-defined loss events occur. Instead of treating losses as an unbounded downside, coverage introduces explicit terms — what is covered, how much can be paid out and under what conditions. **You can think of it as "onchain insurance" that is programmable, transparent and "unregulated".**
+**Risk coverage** is onchain protection attached to a vault deposit that compensates users if pre-defined loss events occur. Instead of treating losses as an unbounded downside, coverage introduces explicit terms — what is covered, how much can be paid out and under what conditions. **You can think of it as "onchain insurance" that is programmable, transparent and unregulated.**
 
 ### 3. Coverage Fee (Premium)
 
