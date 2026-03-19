@@ -21,15 +21,15 @@ They are the **capacity providers** of the system:
 
 Catalysis is designed to **minimize tail risk** for restakers through **strict vault selection, disciplined underwriting and capped downside exposure**.
 
-1. **Tier-1 DeFi vault eligibility**: Coverage is intentionally limited to **ONLY A-rated vaults** curated by **[Gauntlet](https://www.gauntlet.xyz/)** and **[Steakhouse Financial](https://www.steakhouse.financial/)** on Tier-1 protocols such as **Morpho**.
+1. **Tier-1 DeFi vault eligibility**: Coverage is intentionally limited to **ONLY A-rated vaults** curated by **[Gauntlet](https://www.gauntlet.xyz/)** and **[Steakhouse Financial](https://www.steakhouse.financial/)** on Tier-1 protocols such as **[Morpho](https://morpho.org/)**.
 2. **Quantitative underwriting**: Vault eligibility and pricing are informed by our robust underwriting engine across **curator quality, protocol risk and asset profile**.
 3. **Capped loss scenarios**: Historical data indicates a **&lt;1% chance** of a qualifying vault triggering the maximum payout (e.g., 10% of TVL).
 
 ## How Delegators Earn
 
 Delegators generally earn a blend of:
-1. **Coverage fees (Base APY)**: Premiums paid by **Covered Vault** participants
-2. **Native Staking Rewards (Optional)**: Native ETH staking APY for ETH LSTs (say **$wsETH**)
+1. **Coverage fees (Base APY)**: Premiums paid by **Covered Vault** depositors
+2. **Native Staking Rewards (Optional)**: Native ETH staking APY for ETH LSTs (say **$cbETH**)
 3. **Restaking Rewards**: Incentives from the underlying restaking layer (say **$EIGEN**)
 4. **Catalysis Incentives**: Protocol incentives (**wherever applicable**)
 
@@ -93,20 +93,20 @@ For example, **for A-rated Morpho vaults, the maximum payout may be capped at up
 This **modular isolation model is intentional** and designed to limit contagion risk.
 
 ### **Q9. Who decides which vaults are eligible for coverage?**
-**Vault eligibility is strictly controlled.** This is currently decided by the Catalysis Core team. As we progressively decentralize the protocol, it will be decided by future governance proposals.  
+**Vault eligibility is strictly controlled.** This is currently decided by the **Catalysis Core team**. As we progressively decentralize the protocol, it will be decided by future governance proposals.  
 
 Eligibility is determined using:
 - Internal quantitative underwriting models
 - Curator quality and track record
 - Protocol risk, asset profile, and historical behavior
 
-**Lower-tier or experimental vaults are intentionally excluded during the initial launch phase**. Currently, coverage is limited to only A-rated vaults curated by Steakhouse Financial and Gauntlet on Tier-1 DeFi protocols (e.g., Morpho)
+**Lower-tier or experimental vaults are intentionally excluded during the initial launch phase**. Currently, coverage is limited to only A-rated vaults curated by **Steakhouse Financial and Gauntlet** on Tier-1 DeFi protocols (e.g., **Morpho**)
 
 ### **Q10. How is risk monitored over time?**
 **Risk monitoring is continuous.**
-- Underwriting models are updated with live vault and protocol data
+- Our underwriting engine parameters are updated with live vault and protocol data
 - External risk signals and ratings are sourced from **[Credora](https://www.credora.network/)** (via [RedStone](https://www.redstone.finance/))
-- Real-time security monitoring is supported by partners such as **[Hypernative](https://www.hypernative.io/)**
+- Real-time security monitoring is supported by partners such as **[Guardrail](https://www.guardrail.ai/)** and **[Hypernative](https://www.hypernative.io/)**
 
 If risk conditions deteriorate materially, new coverage issuance can be paused or repriced.
 
@@ -140,7 +140,7 @@ Depending on the CoverPool:
 CoverPools typically operate with **fixed allocation periods, commonly around 90 days**. But it depends on the specific configuration of CoverPools and the risk reward metrics.
 
 ### **Q15. What is the current stage of the protocol?**
-**Catalysis is currently in a controlled mainnet rollout phase**. It is launching on **Ethereum mainnet** in **late Q1 2026.** 
+**Catalysis is currently in a controlled mainnet rollout phase**. It is launching on **Ethereum mainnet** in **[early Q2 2026](https://x.com/0xcatalysis).** 
 
 For this launch, coverage is limited to top-tier vaults, risk parameters are conservative and scale is intentionally capped. This approach prioritizes correctness and confidence before expanding to other DeFi vaults / protocols.
 
@@ -180,16 +180,18 @@ In the future, we may explore underwriting **fully uncorrelated markets** (e.g.,
 **Day 1.** Once your capital is locked for the specified duration, it becomes **slashable** under the pool’s **pre-defined coverage conditions**.
 
 ### **Q21: What happens if Catalysis contracts have a bug?**
-Catalysis contracts are audited by Tier-1 auditors including **[ChainSecurity](https://www.chainsecurity.com/)**, **[Sigma Prime](https://sigmaprime.io/)** and **[Failsafe](https://getfailsafe.com/)**.
+Catalysis contracts are audited by Tier-1 auditors including **[Certora](https://www.certora.com/)** and **[Sigma Prime](https://sigmaprime.io/)**.
 
-That said, smart contract risk is never zero — **even Aave is not immune**. This is why we’re launching coverage conservatively and scaling it gradually.
+**That said, smart contract risk is never zero — even Aave is not immune**. If a bug is identified in our contracts, we will fix it promptly and deploy a new audited version via our **upgradeable contract architecture**. In the event a bug is exploited before discovery, we have guardrails in place to **pause the contracts** while we identify and remediate the issue.
+
+This is why we are launching coverage conservatively and scaling gradually.
 
 ### **Q22: Is the coverage non-custodial? Do you ever take custody of funds?**
 **NO.**
 
-**Catalysis never takes custody of funds.** Underwriting capital remains **custodied in the underlying restaking layer (e.g., EigenLayer)** and is referenced by Catalysis contracts for underwriting and enforcement logic. Premium and payout flows are executed onchain into the underlying DeFi vault protocol (e.g., Morpho) according to protocol-defined rules.
+**Catalysis never takes custody of funds.** Underwriting capital remains **custodied in the underlying restaking layer (e.g., EigenLayer)** and is referenced by Catalysis core contracts for underwriting and enforcement logic. Premium and payout flows are executed onchain into the underlying DeFi vault protocol (e.g., Morpho) according to protocol-defined rules.
 
-### **Q23: Is this correlated with EigenLayer slashing risk?**
+### **Q23: Is this correlated with EigenLayer AVS slashing risks?**
 **NO**.
 
 **IT HAS ZERO CORRELATION WITH AVS SLASHING RISKS.** Coverage risk is separate from EigenLayer AVS slashing. Losses only occur from economic underwriting events, not validator misbehavior or uptime faults.  
