@@ -23,8 +23,8 @@ const sidebars = {
       items: [
         'stakeholders/overview',
         'stakeholders/delegators',
+        'stakeholders/defi-vaults',
         'stakeholders/restaking-protocols',
-        'stakeholders/defi-protocols',
         'stakeholders/integration-partners',
       ],
     },
