@@ -1,7 +1,7 @@
 {
     "name": "Catalysis",
     "website": "https://catalysis.network/",
-    "description": "Catalysis is the first Onchain Risk Coverage Infrastructure purpose-built for Institutional DeFi. It turns $20B+ of restaked digital assets into programmable protection for lending markets, stablecoins and structured yield products.",
+    "description": "Catalysis is the first onchain infrastructure to natively integrate coverage into DeFi vaults. It makes risk coverage a first-class vault primitive — enabling Tier-1 DeFi protocols to offer vaults and structured yield products with embedded, programmable risk protection backed by restaked capital.",
     "logo": "https://raw.githubusercontent.com/0xcatalysis/docs/main/static/img/catalysis.png",
     "twitter": "https://twitter.com/0xcatalysis"
 }
