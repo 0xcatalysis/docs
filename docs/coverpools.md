@@ -21,7 +21,7 @@ CoverPools are isolated across both **underwriting logic** and **economic exposu
 3. **Issue**: Coverage contracts with explicit terms (limits, pricing, payouts)
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/coverpools.svg" alt="How it works mobile dark" style={{maxWidth: '100%', maxHeight: '1000px', width: 'auto', height: 'auto', border: '1px solid black'}} />
+<img src="/img/coverpools-how-it-works-light.svg" alt="CoverPools: how it works (light)" style={{maxWidth: '100%', maxHeight: '1000px', width: 'auto', height: 'auto', border: '1px solid black'}} />
 </div>
 
 ## How CoverPools enable modular risk coverage
