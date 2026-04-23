@@ -55,22 +55,3 @@ Sepolia testnet deployments use the same proxy addresses where applicable; the T
     { name: 'DurationVault (wstETH)', address: '0x2134028ADaBE52464E2e3170961F74F4F52D0f51' },
   ]}
 />
-
-## Admin multisigs
-
-These multisigs administer production Catalysis deployments on Ethereum mainnet.
-
-### Catalysis Master Admin
-
-**Address:** `0xd2d03377Fa96687e9C11380DA9956AcC5F307e2c`  
-**Threshold:** 5 of 7
-
-### CoverPool Admin (Curator)
-
-**Address:** `0xaC53fB2CBE8d825D783496fc8D0Bef3000373bA5`  
-**Threshold:** 2 of 3
-
-### CoveredVaultWrapper Admin
-
-**Address:** `0x0a0E34F9f606287da4A8f034Aac2fb391a372c4a`  
-**Threshold:** 3 of 4
