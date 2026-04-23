@@ -711,3 +711,25 @@ body[class*="docs-"] .footer,
   }
 
 }
+
+/* Contract address tables (mainnet docs) */
+.contract-address-table-wrap {
+  margin-bottom: var(--ifm-leading);
+}
+
+.contract-address-table-wrap table {
+  display: table;
+  width: 100%;
+}
+
+.etherscan-inline-link {
+  margin-left: 0.35rem;
+  vertical-align: middle;
+  color: var(--ifm-link-color);
+  display: inline-flex;
+  align-items: center;
+}
+
+.etherscan-inline-link:hover {
+  color: var(--ifm-link-hover-color);
+}
