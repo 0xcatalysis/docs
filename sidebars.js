@@ -50,6 +50,7 @@ const sidebars = {
         },
       ],
     },
+    'mainnet',
     'resources',
     'glossary',
   ],
