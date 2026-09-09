@@ -8,7 +8,7 @@ import AuditReportsTable from '@site/src/components/AuditReportsTable';
 
 This page lists **official Catalysis smart contract security audits**. Use these reports for due diligence and integrations.
 
-Catalysis contracts are audited by Tier-1 firms including **[Sigma Prime](https://sigmaprime.io/)** and **[Certora](https://www.certora.com/)**. **This page is the official reference** for published audit reports; when new audits are completed, we will **update them here**.
+Catalysis contracts are audited by Tier-1 firms including **[Sigma Prime](https://github.com/sigp/public-audits)** and **[Certora](https://www.certora.com/)**. **This page is the official reference** for published audit reports; when new audits are completed, we will **update them here**.
 
 ## Audit reports
 
@@ -17,14 +17,14 @@ Catalysis contracts are audited by Tier-1 firms including **[Sigma Prime](https:
     {
       report: 'Core Smart Contracts',
       auditor: 'Sigma Prime',
-      auditorUrl: 'https://sigmaprime.io/',
+      auditorUrl: 'https://github.com/sigp/public-audits',
       date: 'March 2026',
       href: '/audits/catalysis-core-audit.pdf',
     },
     {
       report: 'Coverage Contracts',
       auditor: 'Sigma Prime',
-      auditorUrl: 'https://sigmaprime.io/',
+      auditorUrl: 'https://github.com/sigp/public-audits',
       date: 'April 2026',
       href: '/audits/catalysis-coverage-audit.pdf',
     },
@@ -38,7 +38,7 @@ Catalysis contracts are audited by Tier-1 firms including **[Sigma Prime](https:
     {
       report: 'Core and Coverage Smart Contracts',
       auditor: 'Sigma Prime',
-      auditorUrl: 'https://sigmaprime.io/',
+      auditorUrl: 'https://github.com/sigp/public-audits',
       date: 'May 2026',
       href: '/audits/catalysis-core-and-coverage-audit.pdf',
     },
