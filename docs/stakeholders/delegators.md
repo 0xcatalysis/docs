@@ -180,7 +180,7 @@ In the future, we may explore underwriting **fully uncorrelated markets** (e.g.,
 **Day 1.** Once your capital is locked for the specified duration, it becomes **slashable** under the pool’s **pre-defined coverage conditions**.
 
 ### **Q21: What happens if Catalysis contracts have a bug?**
-Catalysis contracts are audited by Tier-1 auditors including **[Certora](https://www.certora.com/)** and **[Sigma Prime](https://sigmaprime.io/)**.
+Catalysis contracts are audited by Tier-1 auditors including **[Certora](https://www.certora.com/)** and **[Sigma Prime](https://sigmaprime.io/)**. See the full list of published reports on the **[Audits](/docs/audits/)** page.
 
 **That said, smart contract risk is never zero — even Aave is not immune**. If a bug is identified in our contracts, we will fix it promptly and deploy a new audited version via our **upgradeable contract architecture**. In the event a bug is exploited before discovery, we have guardrails in place to **pause the contracts** while we identify and remediate the issue.
 

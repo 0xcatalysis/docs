@@ -71,6 +71,8 @@ const config = {
           'catalysis-core/network/*',
           'catalysis-core/operators/*',
           'catalysis-core/restaking-protocols/*',
+          'mainnet',
+          'audits',
           'resources',
           'glossary',
         ],
@@ -79,12 +81,12 @@ const config = {
 
 For the complete documentation in a single file, use llms-full.txt.
 
-Documentation covers: introduction, cover pools, stakeholders (delegators, restaking protocols, DeFi protocols, integration partners), Catalysis Core (overview, network quickstart and SDK, contracts, integration, FAQs, node operators, restaking protocols), resources, and glossary.`,
+Documentation covers: introduction, cover pools, stakeholders (delegators, restaking protocols, DeFi protocols, integration partners), Catalysis Core (overview, network quickstart and SDK, contracts, integration, FAQs, node operators, restaking protocols), mainnet contracts, audits, resources, and glossary.`,
         fullRootContent: `Complete documentation bundle for Catalysis Network following the llmstxt.org standard.
 
 This file contains all documentation content in a single document for AI agents and LLMs. Use it for comprehensive context when answering questions about Catalysis.
 
-Sections: Introduction, Cover Pools, Stakeholders, Catalysis Core (Network, Node Operators, Restaking Protocols), Resources, Glossary.
+Sections: Introduction, Cover Pools, Stakeholders, Catalysis Core (Network, Node Operators, Restaking Protocols), Mainnet Contracts, Audits, Resources, Glossary.
 
 Site: https://docs.catalysis.network`,
       },
