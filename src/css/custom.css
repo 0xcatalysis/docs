@@ -733,3 +733,24 @@ body[class*="docs-"] .footer,
 .etherscan-inline-link:hover {
   color: var(--ifm-link-hover-color);
 }
+
+/* Audit reports tables */
+.audit-reports-table-wrap {
+  margin-bottom: var(--ifm-leading);
+}
+
+.audit-reports-table-wrap table {
+  display: table;
+  width: 100%;
+}
+
+.audit-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+}
+
+.audit-download-link svg {
+  flex-shrink: 0;
+}

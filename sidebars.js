@@ -51,6 +51,7 @@ const sidebars = {
       ],
     },
     'mainnet',
+    'audits',
     'resources',
     'glossary',
   ],
